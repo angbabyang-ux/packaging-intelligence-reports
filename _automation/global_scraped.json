@@ -1,0 +1,159 @@
+{
+  "아마존": {
+    "스킨케어": [
+      {
+        "url": "https://www.amazon.com/Biodance-Bio-Collagen-Tightening-Hydrating-Molecular/dp/B0B2RM68G2",
+        "image_url": "https://m.media-amazon.com/images/I/51ubxqzNGIL._AC_UL320_.jpg",
+        "name": "BIODANCE Bio-Collagen Real Deep Mask, Hydrating Overnight Hydrogel Face Mask, Pore Minimizing, Elasticity, Plumping, Tra",
+        "brand": "BIODANCE",
+        "price": "₩22,046"
+      },
+      {
+        "url": "https://www.amazon.com/Neutrogena-Cleansing-Towelettes-Waterproof-Alcohol-Free/dp/B00U2VQZDS",
+        "image_url": "https://m.media-amazon.com/images/I/71eFYqXRGoL._AC_UL320_.jpg",
+        "name": "Neutrogena Makeup Remover Wipes Micellar Alcohol-Free Face Towelettes Remove Waterproof Mascara & Oil, Compostable 100% ",
+        "brand": "Neutrogena",
+        "price": "₩14,460"
+      },
+      {
+        "url": "https://www.amazon.com/Clean-Skin-Club-Disposable-Sensitive/dp/B07PBXXNCY",
+        "image_url": "https://m.media-amazon.com/images/I/61Cn1ooILhL._AC_UL320_.jpg",
+        "name": "Clean Skin Club Clean Towels XL®, 100% USDA Biobased Face Towel, Disposable Face Towelette, Eczema Association Accepted,",
+        "brand": "Clean",
+        "price": "₩26,035"
+      },
+      {
+        "url": "https://www.amazon.com/EQQUALBERRY-Vitamin-Illuminating-Serum-Brightening/dp/B0D8W1YVBX",
+        "image_url": "https://m.media-amazon.com/images/I/614vlOIc8YL._AC_UL320_.jpg",
+        "name": "EQQUALBERRY Vitamin Illuminating Serum | Niacinamide 4% + Brightening Vitamin C Face Serum with Hyaluronic Acid & Vitami",
+        "brand": "EQQUALBERRY",
+        "price": "₩21,741"
+      },
+      {
+        "url": "https://www.amazon.com/Roche-Posay-Toleriane-Double-Repair-Moisturizer/dp/B01N9SPQHQ",
+        "image_url": "https://m.media-amazon.com/images/I/51x78epntaL._AC_UL320_.jpg",
+        "name": "La Roche-Posay Toleriane Double Repair Face Moisturizer, Daily Moisturizer Face Cream with Ceramide & Niacinamide for Al",
+        "brand": "La",
+        "price": "₩36,245"
+      }
+    ],
+    "메이크업": [
+      {
+        "url": "https://www.amazon.com/Neutrogena-Cleansing-Towelettes-Waterproof-Alcohol-Free/dp/B00U2VQZDS",
+        "image_url": "https://m.media-amazon.com/images/I/71eFYqXRGoL._AC_UL320_.jpg",
+        "name": "Neutrogena Makeup Remover Wipes Micellar Alcohol-Free Face Towelettes Remove Waterproof Mascara & Oil, Compostable 100% ",
+        "brand": "Neutrogena",
+        "price": "₩14,460"
+      },
+      {
+        "url": "https://www.amazon.com/Neutrogena-Cleansing-Towelette-Waterproof-Individually/dp/B07GKVBQDG",
+        "image_url": "https://m.media-amazon.com/images/I/718f8oZHkSL._AC_UL320_.jpg",
+        "name": "Neutrogena Makeup Remover Wipes, Daily Single Face Cleansing Towelettes, Makeup Removing Cleansing Wipes Removes Dirt & ",
+        "brand": "Neutrogena",
+        "price": "₩10,834"
+      },
+      {
+        "url": "https://www.amazon.com/Maybelline-Volumizing-Buildable-Lengthening-Multiplying/dp/B08H3JPH74",
+        "image_url": "https://m.media-amazon.com/images/I/71MQo8pHmBL._AC_UL320_.jpg",
+        "name": "Maybelline Lash Sensational Sky High Washable Mascara Makeup, Volumizing, Lengthening, Defining, Curling, Multiplying, B",
+        "brand": "Maybelline",
+        "price": "₩15,693"
+      },
+      {
+        "url": "https://www.amazon.com/ANUA-Heartleaf-Cleansing-Cleanser-Blackheads/dp/B0BN2PX8V3",
+        "image_url": "https://m.media-amazon.com/images/I/51cLnb6BkZL._AC_UL320_.jpg",
+        "name": "Anua Heartleaf Pore Control Cleansing Oil, Pore Cleanser, Sebum Care, Gentle Melting Oil Cleanser for Face, Safe For All",
+        "brand": "Anua",
+        "price": "₩25,657"
+      },
+      {
+        "url": "https://www.amazon.com/Garnier-SkinActive-Micellar-Cleansing-Water/dp/B017PCGABI",
+        "image_url": "https://m.media-amazon.com/images/I/61qrHCKF0jL._AC_UL320_.jpg",
+        "name": "Garnier Micellar Water, Hydrating Facial Cleanser & Makeup Remover, Suitable for Sensitive Skin, Vegan, Cruelty Free, 13",
+        "brand": "Garnier",
+        "price": "₩12,792"
+      }
+    ],
+    "헤어케어": [
+      {
+        "url": "https://www.amazon.com/Goody-WoMens-Ouchless-Braided-Elastics/dp/B00IGJ1XOO",
+        "image_url": "https://m.media-amazon.com/images/I/71wEqWRzprL._AC_UL320_.jpg",
+        "name": "Goody Ouchless Hair Elastics - No Pull, No Breakage, Tangle-Free Hold for Thick, Curly, Coily & Textured Hair - 30 Count",
+        "brand": "Goody",
+        "price": "₩4,308"
+      },
+      {
+        "url": "https://www.amazon.com/Level-Styling-Powder-Natural-Delivers/dp/B08SNSSTPZ",
+        "image_url": "https://m.media-amazon.com/images/I/613TfOjyprL._AC_UL320_.jpg",
+        "name": "L3 Level 3 Styling Powder - Natural Look Mens Powder - Easy to Apply with No Oil or Greasy Residue (Small - 30 Grams)",
+        "brand": "L3",
+        "price": "₩14,214"
+      },
+      {
+        "url": "https://www.amazon.com/Lottabody-Lightweight-Moisture-Rich-Curl-Defining-Frizz-Control/dp/B000TG63EW",
+        "image_url": "https://m.media-amazon.com/images/I/71ZbDgLQWLL._AC_UL320_.jpg",
+        "name": "Lottabody Wrap Me Foaming Mousse with Coconut & Shea Oils, Lightweight Moisture-Rich Curl-Defining & Frizz-Control Styli",
+        "brand": "Lottabody",
+        "price": "₩6,121"
+      },
+      {
+        "url": "https://www.amazon.com/Kitsch-Smoothing-Air-Cream-Hair/dp/B0F96FNT39",
+        "image_url": "https://m.media-amazon.com/images/I/614yO-tJA0L._AC_UL320_.jpg",
+        "name": "Kitsch Smoothing Air Dry Cream for Hair – Frizz Control Hair Care Product with Castor Oil & Coconut Oil – Weightless Sty",
+        "brand": "Kitsch",
+        "price": "₩21,741"
+      },
+      {
+        "url": "https://www.amazon.com/BASK-LATHER-Strong-Thick-Edges/dp/B0CFZ6H1QQ",
+        "image_url": "https://m.media-amazon.com/images/I/51qY3llGXGL._AC_UL320_.jpg",
+        "name": "BASK & LATHER Strong Hold Edge Control Gel with Castor Oil, Non-Greasy, Non-Flaking, No White Cast, Long Lasting, Suppor",
+        "brand": "BASK",
+        "price": "₩18,841"
+      }
+    ],
+    "향수": [
+      {
+        "name": "Sol de Janeiro Hair & Body Perfume Mist",
+        "brand": "Sol",
+        "price": "KRW 37,912",
+        "url": "https://www.amazon.com/SOL-JANEIRO-Cheirosa-Hair-Fragrance/dp/B09W18N3GT",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61eXe6NOAuL._AC_UL600_SR600,400_.jpg"
+      },
+      {
+        "name": "eos Cashmere Body Mist, Vanilla Cashmere, Soft Musk, Cozy Caramel, Hair Mist, Body Spray for Women M",
+        "brand": "eos",
+        "price": "KRW 18,796",
+        "url": "https://www.amazon.com/eos-Cashmere-Moisturizing-Hyaluronic-Cruelty-free/dp/B0FM2CCBS1",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61SgurHlDNL._AC_UL600_SR600,400_.jpg"
+      },
+      {
+        "name": "Bodycology Long-Lasting Fragrance Body Mist, Cherry Blossom, 8 fl oz",
+        "brand": "Bodycology",
+        "price": "KRW 7,247",
+        "url": "https://www.amazon.com/Bodycology-Long-Lasting-Fragrance-Cherry-Blossom/dp/B0D23654ZR",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61+UR9PhRXL._AC_UL600_SR600,400_.jpg"
+      },
+      {
+        "name": "Nautica Voyage Eau De Toilette, Cologne and Fragrance For Men, Fresh, Romantic, Fruity Scent Woody, ",
+        "brand": "Nautica",
+        "price": "KRW 32,867",
+        "url": "https://www.amazon.com/Nautica-Voyage-Eau-Toilette-Spray/dp/B000P22TIY",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51S3W4tnDbL._AC_UL600_SR600,400_.jpg"
+      },
+      {
+        "name": "Victoria's Secret Body Fragrance Mist, Bare Vanilla - 8.4 fl oz",
+        "brand": "Victoria's",
+        "price": "KRW 29,090",
+        "url": "https://www.amazon.com/Victorias-Secret-Fragrance-Mist-Vanilla/dp/B07JRG42D9",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61WfTqDcqKL._AC_UL600_SR600,400_.jpg"
+      }
+    ]
+  },
+  "세포라": {
+    "스킨케어": [],
+    "메이크업": [],
+    "헤어케어": [],
+    "향수": [],
+    "바디케어": []
+  }
+}

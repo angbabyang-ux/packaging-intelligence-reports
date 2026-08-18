@@ -1,0 +1,187 @@
+{
+  "스킨케어": [
+    {
+      "name": "CC Crème - Soin Correcteur teinté – Bonne mine & éclat",
+      "brand": "ERBORIAN",
+      "price": "€25.50",
+      "url": "https://www.sephora.fr/p/cc-creme---soin-correcteur-teinte-%E2%80%93-bonne-mine-et-eclat-P1000208831.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/E/ERBORIAN/775211/377321-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Gel-Crème Hydratant - Crème hydratante",
+      "brand": "BYOMA",
+      "price": "€18.00",
+      "url": "https://www.sephora.fr/p/gel-creme-hydratant-633707.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/B/BYOMA/633707/281321-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "The Depuff Eyespresso - Patchs décongestionnants à la caféine et au thé vert",
+      "brand": "YEPODA",
+      "price": "€29.00",
+      "url": "https://www.sephora.fr/p/the-depuff-eyespresso-%E2%80%93-patchs-decongestionnants-a-la-cafeine-et-au-the-vert-P10061722.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/Y/YEPODA/762582/365616-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Relief Sun: Rice + Probiotics SPF50+ - Écran solaire riz & probiotiques",
+      "brand": "BEAUTY OF JOSEON",
+      "price": "€18.00",
+      "url": "https://www.sephora.fr/p/relief-sun--rice-probiotics-spf50----ecran-solaire-riz-et-probiotiques-761609.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/B/BEAUTY_OF_JOSEON/761609/365603-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "GLOW - Crème yeux éclat à la vitamine C et à l'acide hyaluronique",
+      "brand": "SEPHORA COLLECTION",
+      "price": "€15.99",
+      "url": "https://www.sephora.fr/p/glow---creme-yeux-eclat-a-la-vitamine-c-et-a-l-acide-hyaluronique-743599.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/S/SEPHORA_COLLECTION/743599/366911-media_swatch.jpeg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    }
+  ],
+  "메이크업": [
+    {
+      "name": "Easy Bake Loose Baking & Setting Powder - Poudre Libre",
+      "brand": "HUDA BEAUTY",
+      "price": "€39.90",
+      "url": "https://www.sephora.fr/p/easy-bake-loose-powder---poudre-libre-P3410032.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/H/HUDA_BEAUTY/425710/55221-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Chocolate Soleil Stick Crémeux - Stick Bronzant et Sculptant",
+      "brand": "TOO FACED",
+      "price": "€34.00",
+      "url": "https://www.sephora.fr/p/chocolate-soleil-stick-cremeux---stick-bronzant-et-sculptant-P10057348.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/T/TOO_FACED/690137/334411-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Vanish Airbrush Concealer - Anti-cernes",
+      "brand": "HOURGLASS",
+      "price": "€39.90",
+      "url": "https://www.sephora.fr/p/vanish-airbrush-concealer---anticernes-P3959108.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/H/HOURGLASS/504105/161730-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "LIP TINT FELT LINER - Encre à lèvres feutre sans transfert",
+      "brand": "SEPHORA COLLECTION",
+      "price": "€12.99",
+      "url": "https://www.sephora.fr/p/lip-tint-felt-liner---encre-a-levres-feutre-sans-transfert-P1000211847.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/S/SEPHORA_COLLECTION/766168/370617-media_swatch-1.jpeg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Airbrush Flawless Finish Setting Spray - Spray fixateur maquillage",
+      "brand": "CHARLOTTE TILBURY",
+      "price": "€23.50",
+      "url": "https://www.sephora.fr/p/airbrush-flawless-finish-setting-spray---spray-fixateur-maquillage-P1000211613.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/C/CHARLOTTE_TILBURY/800314/391919-media_swatch-0.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    }
+  ],
+  "헤어케어": [
+    {
+      "name": "Nutritive - Sérum de Nuit 8h",
+      "brand": "KÉRASTASE",
+      "price": "€26.00",
+      "url": "https://www.sephora.fr/p/nutritive---serum-de-nuit-8-h-P10050794.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/K/KERAS/691848/323289-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Leave-in Molecular Repair Hair Mask - Traitement pour Cheveux Abîmés",
+      "brand": "K18",
+      "price": "€31.00",
+      "url": "https://www.sephora.fr/p/leave-in-molecular-repair-hair-mask---traitement-pour-cheveux-abimes-P10052253.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/K/K18/612634/329874-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Genesis Sérum Anti-Chute Fortifiant - Sérum anti-chute des cheveux",
+      "brand": "KÉRASTASE",
+      "price": "€59.00",
+      "url": "https://www.sephora.fr/p/genesis---serum-fortifiant-anti-chute-511082.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/K/KERAS/511082/167008-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "AirWash Dry Shampoo - Shampooing sec réducteur de sébum et anti-odeurs",
+      "brand": "K18",
+      "price": "€27.00",
+      "url": "https://www.sephora.fr/p/airwash-dry-shampoo---reduire-l-huile-eliminer-les-odeur-P1000205354.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/K/K18/719061/371954-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Honey Gloss Ceramide Therapy - Masque cheveux",
+      "brand": "GISOU",
+      "price": "€24.00",
+      "url": "https://www.sephora.fr/p/honey-gloss-ceramide-therapy-%E2%80%93-masque-cheveux-P10061523.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/G/GISOU/760195/363971-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    }
+  ],
+  "향수": [
+    {
+      "name": "for her PURE MUSC BLANC - Eau de Parfum Intense",
+      "brand": "NARCISO RODRIGUEZ",
+      "price": "€97.00",
+      "url": "https://www.sephora.fr/p/for-her-pure-musc-blanc---eau-de-parfum-intense-P1000211915.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/N/NARCISO_RODRIGUEZ/801553/393218-media_swatch-1.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Yum Boujee Marshmallow 81 - Eau de Parfum Intense",
+      "brand": "KAYALI",
+      "price": "€33.00",
+      "url": "https://www.sephora.fr/p/yum-boujee-marshmallow--81---eau-de-parfum-intense-P10061050.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/K/KAYALI/733612/352540-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "BLEU DE CHANEL - Eau De Parfum",
+      "brand": "CHANEL",
+      "price": "€114.00",
+      "url": "https://www.sephora.fr/p/bleu-de-chanel---eau-de-parfum-P1922003.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/C/CHANEL/304708/57739-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Libre Berry Crush - Eau de Parfum Florale Fruitée pour femme",
+      "brand": "YVES SAINT LAURENT",
+      "price": "€89.00",
+      "url": "https://www.sephora.fr/p/libre---eau-de-parfum-florale-fruitee-pour-femme-P1000211984.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/Y/YVES_SAINT_LAURENT/800626/398786-media_swatch-0.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "COCO MADEMOISELLE - Eau De Parfum Vaporisateur",
+      "brand": "CHANEL",
+      "price": "€97.00",
+      "url": "https://www.sephora.fr/p/coco-mademoiselle---eau-de-parfum-P96042.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/C/CHANEL/92482/92586-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    }
+  ],
+  "바디케어": [
+    {
+      "name": "Brazilian Bum Bum Cream - Crème Corps Brésilienne Bum Bum",
+      "brand": "SOL DE JANEIRO",
+      "price": "€22.00",
+      "url": "https://www.sephora.fr/p/brazilian-bum-bum-cream---creme-corps-bresilienne-bum-bum-P2947004.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/S/SOL_DE_JANEIRO/413004/31397-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "The Ritual of Yozakura - Gel Douche Moussant",
+      "brand": "RITUALS",
+      "price": "€11.00",
+      "url": "https://www.sephora.fr/p/the-ritual-of-yozakura---gel-douche-moussant-761819.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/R/RITUALS/761819/365463-media_swatch.jpeg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "KP Bump Eraser Body Scrub with 10% AHA - Exfoliant Corporel aux AHA",
+      "brand": "FIRST AID BEAUTY",
+      "price": "€13.00",
+      "url": "https://www.sephora.fr/p/kp-bump-eraser-body-scrub-with-10%25-aha-exfoliant-corporel-aux-aha-P10013882.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/F/FIRST_AID_BEAUTY/479559/180001-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Déodorant Stick Fleur de Coton - Efficacité 48H",
+      "brand": "RESPIRE",
+      "price": "€14.90",
+      "url": "https://www.sephora.fr/p/deodorant-stick-fleur-de-coton---efficacite-48h-P1000203283.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/R/RESPIRE/728536/348617-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    },
+    {
+      "name": "Body Badalada™ - Lotion hydratante légère 24h",
+      "brand": "SOL DE JANEIRO",
+      "price": "€26.00",
+      "url": "https://www.sephora.fr/p/body-badalada%E2%84%A2---lotion-hydratante-legere-24h-764439.html",
+      "image_url": "https://media.sephora.eu/content/dam/digital/pim/published/S/SOL_DE_JANEIRO/764439/365650-media_swatch.jpg?scaleWidth=240&scaleHeight=240&scaleMode=fit"
+    }
+  ]
+}
