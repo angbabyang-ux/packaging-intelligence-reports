@@ -2,7 +2,7 @@
 """친환경·포장재 규제 리포트 — 무인 주간 자동 실행용.
 RSS 수집 → 중복제거 → 번역 → (로컬 claude CLI로 요약 생성, anthropic API 키 불필요) → 엑셀+HTML.
 """
-import sys, os, json, subprocess
+import sys, os, json, subprocess, tempfile
 from pathlib import Path
 
 # Windows 콘솔이 cp949일 때 특수문자 print가 죽는 문제 방지 (작업 스케줄러 비대화식 실행 대비)
@@ -35,10 +35,19 @@ def claude_summarize(articles):
 
 JSON만 출력: {{"current":"...","future":"..."}}"""
     try:
-        r = subprocess.run(
-            ['claude', '-p', '--output-format', 'json', '--model', 'sonnet'],
-            input=prompt, capture_output=True, text=True, timeout=180,
-            shell=(sys.platform == 'win32'), env=_CLAUDE_ENV, cwd=str(BASE))
+        # stdin은 반드시 UTF-8로 인코딩된 파일로 넘긴다 — subprocess의 text=True + input=str는
+        # 로케일 기본 인코딩(cp949)으로 인코딩하려다 크래시한다(PYTHONIOENCODING으로도 못 막음).
+        with tempfile.NamedTemporaryFile('w', suffix='.txt', delete=False, encoding='utf-8') as f:
+            f.write(prompt)
+            tmp_path = f.name
+        try:
+            with open(tmp_path, 'r', encoding='utf-8') as fin:
+                r = subprocess.run(
+                    ['claude', '-p', '--output-format', 'json', '--model', 'sonnet'],
+                    stdin=fin, capture_output=True, text=True, encoding='utf-8', timeout=180,
+                    shell=(sys.platform == 'win32'), env=_CLAUDE_ENV, cwd=str(BASE))
+        finally:
+            os.unlink(tmp_path)
         if r.returncode != 0:
             raise RuntimeError(f'claude rc={r.returncode}: {r.stderr[:200]}')
         outer = json.loads(r.stdout)
