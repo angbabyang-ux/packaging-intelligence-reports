@@ -1,0 +1,24 @@
+[
+  {
+    "number": 2,
+    "date_range": "2026.08.25~09.01",
+    "newsletter_path": "newsletter.html",
+    "regulation_path": "regulation.html",
+    "newsletter_items": 42,
+    "photo_count": 40,
+    "regulation_current": 5,
+    "regulation_future": 5,
+    "masthead_title": "이번 주, 포장재는 어디로"
+  },
+  {
+    "number": 3,
+    "date_range": "2026.09.15~09.21",
+    "newsletter_path": "newsletter-3.html",
+    "regulation_path": "regulation-3.html",
+    "newsletter_items": 17,
+    "photo_count": 8,
+    "regulation_current": 5,
+    "regulation_future": 5,
+    "masthead_title": "규제 마감시계가 빨라지는 한 주"
+  }
+]
