@@ -1,76 +1,85 @@
-<!DOCTYPE html>
-<html lang="ko"><head>
+<!doctype html>
+<html lang="ko">
+<head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>포장재 인텔리전스 · 2026년 09월 01일</title>
+<title>포장재 인텔리전스 아카이브</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FAF8F4; --ink: #17191D; --ink-soft: #4A4D55; --slate: #6B6F7B;
+  --accent: #1B4FE0; --accent-soft: #EEF2FF; --accent-line: #C9D6FB; --line: #E6E4DC; --card: #FFFFFF;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+    --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A; --line: #2A2B30; --card: #1B1C22;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+  --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A; --line: #2A2B30; --card: #1B1C22;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; padding: 0 16px; }
+.wrap { max-width: 680px; margin: 0 auto; padding-block: 48px 80px; }
+.kicker { font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; margin: 0 0 14px; }
+h1 { font-family: 'Noto Serif KR', serif; font-weight: 900; font-size: clamp(28px, 5vw, 38px);
+  line-height: 1.2; margin: 0 0 10px; text-wrap: balance; }
+.sub { font-size: 14.5px; color: var(--slate); margin: 0 0 40px; line-height: 1.6; }
+.issue-list { display: flex; flex-direction: column; border-top: 2px solid var(--ink); }
+.issue-row { display: flex; justify-content: space-between; align-items: baseline;
+  gap: 16px; padding: 22px 4px; border-bottom: 1px solid var(--line); text-decoration: none; color: inherit; }
+.issue-row.reg-row { padding: 0 4px 18px; border-bottom: 1px solid var(--line); }
+.issue-row:hover .issue-title { color: var(--accent); }
+.issue-no { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 13px; color: var(--accent); min-width: 44px; }
+.issue-main { flex: 1; }
+.issue-title { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 18px; margin: 0 0 4px; }
+.issue-title-sm { font-size: 13px; color: var(--slate); margin: 0; }
+.issue-row.reg-row:hover .issue-title-sm { color: var(--accent); }
+.issue-range { font-size: 12.5px; color: var(--slate); font-variant-numeric: tabular-nums; }
+.issue-stats { font-size: 12px; color: var(--slate); text-align: right; white-space: nowrap; }
+</style>
 </head>
-<body style="margin:0;padding:16px;background-color:#f0f0f0;font-family:'Malgun Gothic',Arial,sans-serif;">
-<table width="720" cellpadding="0" cellspacing="0" border="0" align="center"
-       style="background-color:#ffffff;border-collapse:collapse;max-width:720px;width:100%;">
-  <tr>
-    <td style="background-color:#1a1a2e;padding:26px 28px 22px;">
-      <div style="color:#ffffff;font-size:20px;font-weight:700;font-family:'Malgun Gothic',Arial,sans-serif;margin-bottom:6px;">
-        포장재 인텔리전스 · 2026년 09월 01일
-      </div>
-      <div style="color:#ffffff;font-size:12px;font-family:'Malgun Gothic',Arial,sans-serif;">
-        아래 세 리포트는 각각 별도 페이지로 열립니다. 항목을 클릭해 확인해 주세요.
-      </div>
-    </td>
-  </tr>
-
-  <tr><td style="padding:24px 28px 8px;">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0"
-           style="border-collapse:collapse;border:1px solid #e3e5ea;border-radius:6px;">
-      <tr>
-        <td width="6" style="background-color:#6E9BFF;"></td>
-        <td style="padding:18px 20px;">
-          <div style="font-size:11px;color:#6E9BFF;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">01 &nbsp;NEWSLETTER</div>
-          <div style="font-size:16px;color:#1a1a2e;font-weight:700;margin-bottom:5px;">포장재 뉴스레터 · 2호</div>
-          <div style="margin-top:12px;">
-            <a href="newsletter.html" style="display:inline-block;background-color:#6E9BFF;color:#ffffff;font-weight:700;font-size:12px;padding:9px 18px;border-radius:20px;text-decoration:none;">바로가기 &rarr;</a>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </td></tr>
-
-  <tr><td style="padding:8px 28px 24px;">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0"
-           style="border-collapse:collapse;border:1px solid #e3e5ea;border-radius:6px;">
-      <tr>
-        <td width="6" style="background-color:#cf0248;"></td>
-        <td style="padding:18px 20px;">
-          <div style="font-size:11px;color:#cf0248;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">02 &nbsp;BEST 5 제품 특징</div>
-          <div style="font-size:16px;color:#1a1a2e;font-weight:700;margin-bottom:5px;">올리브영·아마존·세포라 BEST 5 제품 특징 리포트</div>
-          <div style="margin-top:12px;">
-            <a href="best5.html" style="display:inline-block;background-color:#cf0248;color:#ffffff;font-weight:700;font-size:12px;padding:9px 18px;border-radius:20px;text-decoration:none;">바로가기 &rarr;</a>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </td></tr>
-
-  <tr><td style="padding:8px 28px 24px;">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0"
-           style="border-collapse:collapse;border:1px solid #e3e5ea;border-radius:6px;">
-      <tr>
-        <td width="6" style="background-color:#1F4E79;"></td>
-        <td style="padding:18px 20px;">
-          <div style="font-size:11px;color:#1F4E79;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">03 &nbsp;REGULATION</div>
-          <div style="font-size:16px;color:#1a1a2e;font-weight:700;margin-bottom:5px;">친환경·포장재 규제 최신 동향 리포트</div>
-          <div style="margin-top:12px;">
-            <a href="regulation.html" style="display:inline-block;background-color:#1F4E79;color:#ffffff;font-weight:700;font-size:12px;padding:9px 18px;border-radius:20px;text-decoration:none;">바로가기 &rarr;</a>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </td></tr>
-
-  <tr>
-    <td style="padding:16px 28px 22px;background-color:#f7f7f7;font-size:10.5px;color:#999;line-height:1.7;">
-      ※ 세포라 제품 이미지는 사이트 자체의 봇 차단(Access Denied)으로 표시가 안 됩니다.<br>
-      ※ 세 리포트 모두 초안입니다. 발행 여부는 사람이 확인 후 결정합니다.
-    </td>
-  </tr>
-</table>
-</body></html>
+<body>
+<div class="wrap">
+  <p class="kicker">PACKAGING INTELLIGENCE · ARCHIVE</p>
+  <h1>포장재 인텔리전스</h1>
+  <p class="sub">주간 포장재 산업 뉴스레터와 친환경·포장재 규제 동향 리포트를 한 곳에 모았습니다.</p>
+  <div class="issue-list">
+    <a class="issue-row" href="https://angbabyang-ux.github.io/packaging-intelligence-reports/newsletter-3.html" target="_blank" rel="noopener">
+      <span class="issue-no">3호</span>
+      <span class="issue-main">
+        <p class="issue-title">규제 마감시계가 빨라지는 한 주</p>
+        <p class="issue-range">2026.09.15 &ndash; 09.21</p>
+      </span>
+      <span class="issue-stats">신선 17건<br>사진 8장</span>
+    </a>
+    <a class="issue-row reg-row" href="https://angbabyang-ux.github.io/packaging-intelligence-reports/regulation-3.html" target="_blank" rel="noopener">
+      <span class="issue-no"></span>
+      <span class="issue-main">
+        <p class="issue-title-sm">→ 친환경·포장재 규제 리포트 (현재 5건 · 앞으로 5건)</p>
+      </span>
+    </a>
+<a class="issue-row" href="https://angbabyang-ux.github.io/packaging-intelligence-reports/newsletter.html" target="_blank" rel="noopener">
+      <span class="issue-no">2호</span>
+      <span class="issue-main">
+        <p class="issue-title">이번 주, 포장재는 어디로</p>
+        <p class="issue-range">2026.08.25 &ndash; 09.01</p>
+      </span>
+      <span class="issue-stats">신선 42건<br>사진 40장</span>
+    </a>
+    <a class="issue-row reg-row" href="https://angbabyang-ux.github.io/packaging-intelligence-reports/regulation.html" target="_blank" rel="noopener">
+      <span class="issue-no"></span>
+      <span class="issue-main">
+        <p class="issue-title-sm">→ 친환경·포장재 규제 리포트 (현재 5건 · 앞으로 5건)</p>
+      </span>
+    </a>
+  </div>
+</div>
+</body>
+</html>
