@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포장재 인텔리전스 3호</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FAF8F4; --ink: #17191D; --ink-soft: #4A4D55; --slate: #6B6F7B;
+  --accent: #1B4FE0; --accent-soft: #EEF2FF; --accent-line: #C9D6FB;
+  --line: #E6E4DC; --card: #FFFFFF;
+  --tag-neutral: #5B5F69; --tag-neutral-line: #DEDCD3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+    --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+    --line: #2A2B30; --card: #1B1C22;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+  --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+  --line: #2A2B30; --card: #1B1C22;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; padding: 0 16px; }
+.wrap { max-width: 720px; margin: 0 auto; padding-block: 48px 80px; }
+.masthead { padding-bottom: 28px; border-bottom: 2px solid var(--ink); margin-bottom: 32px; }
+.kicker { font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; margin: 0 0 14px; }
+.masthead-title { font-family: 'Noto Serif KR', serif; font-weight: 900;
+  font-size: clamp(32px, 6vw, 46px); line-height: 1.18; letter-spacing: -0.01em;
+  margin: 0 0 18px; text-wrap: balance; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 13px; color: var(--slate);
+  font-variant-numeric: tabular-nums; }
+.meta-bar b { color: var(--ink); font-weight: 700; }
+.meta-bar .accent { color: var(--accent); font-weight: 700; }
+.meta-sep { margin: 0 10px; color: var(--line); }
+.summary { border: 1px solid var(--accent-line); background: var(--accent-soft);
+  border-radius: 4px; padding: 22px 24px; margin-bottom: 40px; }
+.summary-label { font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: var(--accent);
+  margin: 0 0 10px; text-transform: uppercase; }
+.summary p { margin: 0; font-size: 15.5px; line-height: 1.75; color: var(--ink); }
+.section { margin-bottom: 44px; }
+.section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 4px;
+  border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+.section-kicker { font-size: 12px; letter-spacing: 0.16em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; white-space: nowrap; }
+.section-title { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 20px;
+  margin: 0; color: var(--ink-soft); }
+.item-grid { display: flex; flex-direction: column; }
+.item { display: grid; grid-template-columns: 168px 1fr; gap: 20px;
+  padding: 26px 0; border-bottom: 1px solid var(--line); }
+.item:last-child { border-bottom: none; }
+.item-media { width: 168px; aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden;
+  background: var(--line); border: 1px solid var(--line); }
+.item-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.item:not(:has(.item-media)) { grid-template-columns: 1fr; }
+.item-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 9px; }
+.tag { font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px;
+  border: 1px solid var(--accent-line); color: var(--accent); white-space: nowrap; line-height: 1.5; }
+a.item-headline-link, a.item-desc-link { text-decoration: none; color: inherit; }
+.item-headline { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 17.5px;
+  line-height: 1.34; letter-spacing: -0.005em; margin: 0 0 6px; color: var(--ink); }
+a.item-headline-link:hover .item-headline { color: var(--accent); }
+.item-meta { font-size: 12px; color: var(--slate); margin-bottom: 8px; }
+.item-desc { font-size: 14px; line-height: 1.64; color: var(--ink-soft); margin: 0 0 10px; max-width: 65ch; }
+.item-insight { border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0;
+  padding: 8px 14px; font-size: 13px; line-height: 1.6; color: var(--accent); background: var(--accent-soft); }
+.footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+  font-size: 11.5px; line-height: 1.8; color: var(--slate); }
+@media (max-width: 560px) {
+  .item { grid-template-columns: 96px 1fr; gap: 14px; }
+  .item-media { width: 96px; }
+  .item-headline { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="kicker">PACKAGING INTELLIGENCE · WEEKLY</p>
+    <h1 class="masthead-title">규제 마감시계가 빨라지는 한 주</h1>
+    <div class="meta-bar">
+      <span class="accent">3호</span><span class="meta-sep">·</span>
+      2026.09.15 &ndash; 09.21<span class="meta-sep">·</span>
+      신선 <b>17</b>건<span class="meta-sep">·</span>
+      규제 <span class="accent">1</span><span class="meta-sep">·</span>
+      사진 8
+    </div>
+  </header>
+
+  <div class="summary">
+    <p class="summary-label">AI 요약 노트</p>
+    <p>이번 주 신호를 보면 포장이 두 갈래로 갈라졌다. 하나는 규제 시계다—EU PPWR 본격 시행, 캘리포니아·중국의 의무화 조치가 겹치며 컴플라이언스 일정이 촘촘해지고 있다. 다른 하나는 소재 현장이다—라이너리스, 리필형 유리·알루미늄 용기가 전시장 시상대에 오르며 &#x27;친환경 옵션&#x27;에서 &#x27;기본 사양&#x27;으로 넘어가는 신호가 뚜렷하다.</p>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">REGULATION</span>
+      <h2 class="section-title">규제 레이더 · REGULATION — PPWR 본격 시행, 마감시계가 빨라진다</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+
+<div class="item-body">
+<div class="item-tags"><span class="tag">글로벌</span><span class="tag">S3상용</span><span class="tag">지속가능</span><span class="tag">업계공인</span></div>
+<a class="item-headline-link" href="https://www.packaginginsights.com/events/europack-summit-2026-september.html" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — EuroPack Summit 2026, PPWR·EPR을 실행 전략으로 바꾸는 법</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-07</span><span class="meta-sep"> · </span>Packaging Insights</div>
+<a class="item-desc-link" href="https://www.packaginginsights.com/events/europack-summit-2026-september.html" target="_blank" rel="noopener"><p class="item-desc">스위스 몬트뢰에서 열린 EuroPack Summit 2026에서 FMCG·리테일·포장 업계 리더들이 PPWR과 EPR 요건을 실행 전략으로 전환하는 방법을 논의했다. 경량화, 라이프사이클 설계, 대체 소재를 통한 비용 절감과 지속가능성 동시 달성이 핵심 의제였다.</p></a>
+<div class="item-insight">그래서— PPWR 대응은 이제 &#x27;법무 이슈&#x27;가 아니라 &#x27;조달·설계 전략&#x27; 안건으로 격상됐다.</div>
+</div>
+</article></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">SIGNALS</span>
+      <h2 class="section-title">이번 주 신호 · SIGNALS — 그 외 혁신 신호</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+
+<div class="item-body">
+<div class="item-tags"><span class="tag">글로벌</span><span class="tag">S3상용</span><span class="tag">지속가능</span><span class="tag">업계공인</span></div>
+<a class="item-headline-link" href="https://www.packaginginsights.com/news/top-packaging-trends-2026-sustainability-digital-innovation.html" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — &#x27;입증된 지속가능성&#x27;이 2026년 포장 트렌드 1위로</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-15</span><span class="meta-sep"> · </span>Packaging Insights</div>
+<a class="item-desc-link" href="https://www.packaginginsights.com/news/top-packaging-trends-2026-sustainability-digital-innovation.html" target="_blank" rel="noopener"><p class="item-desc">PPWR 등 규제 강화로 검증된 환경 주장(Substantiated Sustainability)이 2026년 포장 최우선 트렌드로 꼽혔다. AI·AR·QR코드를 활용한 디지털 제품여권(Digital Product Passport)도 함께 부상 중이다.</p></a>
+<div class="item-insight">그래서— &#x27;친환경&#x27;이라 적기만 하던 시대는 끝났다. 이제는 증빙 데이터가 있어야 한다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://www.pulpapernews.com/sites/default/files/styles/content_media_slider/public/media-cover-images/alexas_fotos-cardboard-boxes-3110034_1920_0.jpeg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag">글로벌</span><span class="tag">S3상용</span><span class="tag">업계공인</span></div>
+<a class="item-headline-link" href="https://www.pulpapernews.com/20260818/18070/packaging-gets-its-own-international-awareness-day" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — 세계 최초 &#x27;World Packaging Day&#x27;, 9월 6일 출범</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-06</span><span class="meta-sep"> · </span>Pulp &amp; Paper News</div>
+<a class="item-desc-link" href="https://www.pulpapernews.com/20260818/18070/packaging-gets-its-own-international-awareness-day" target="_blank" rel="noopener"><p class="item-desc">세계포장기구(WPO)가 제품 안전·식품 공급·무역·순환경제에서 포장의 역할을 알리기 위해 9월 6일을 &#x27;World Packaging Day&#x27;로 처음 제정했다. 업계 공동의 인지도 제고 캠페인으로 기획됐다.</p></a>
+<div class="item-insight">그래서— 포장이 &#x27;비용&#x27;이 아니라 &#x27;인프라&#x27;라는 업계의 메시지가 공식화됐다.</div>
+</div>
+</article><article class="item">
+
+<div class="item-body">
+<div class="item-tags"><span class="tag">글로벌</span><span class="tag">S3상용</span><span class="tag">기술혁신</span><span class="tag">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packagingstrategies.com/articles/106637-herma-labels-expands-linerless-range-for-logistics-applications" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — HERMA, PPWR 대응 라이너리스 신소재 &#x27;Linerless Plus 400&#x27; 출시</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-16</span><span class="meta-sep"> · </span>Packaging Strategies</div>
+<a class="item-desc-link" href="https://www.packagingstrategies.com/articles/106637-herma-labels-expands-linerless-range-for-logistics-applications" target="_blank" rel="noopener"><p class="item-desc">HERMA가 물류·산업용 라벨링을 겨냥한 신소재 &#x27;Linerless Plus 400&#x27;을 출시했다. 접착제 프리 구간을 미리 정의할 필요가 없어 롤 설계가 단순해지고, 세척 주기도 늘어난다. PPWR 시행과 맞물려 라이너 폐기물을 줄이는 자원효율형 라벨로 소개됐다.</p></a>
+<div class="item-insight">그래서— 라이너리스가 &#x27;친환경 옵션&#x27;에서 &#x27;물류 표준 사양&#x27;으로 넘어가는 신호다.</div>
+</div>
+</article><article class="item">
+
+<div class="item-body">
+<div class="item-tags"><span class="tag">글로벌</span><span class="tag">S2프로토</span><span class="tag">발상혁신</span><span class="tag">지속가능</span></div>
+<a class="item-headline-link" href="https://www.labelandnarrowweb.com/exclusives/grablok-a-linerless-label-wins-big-at-packaging-innovations-empack-2026/" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — GrabLok 라이너리스 라벨, Packaging Innovations &amp; Empack 2026 대상 수상</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-17</span><span class="meta-sep"> · </span>Label and Narrow Web</div>
+<a class="item-desc-link" href="https://www.labelandnarrowweb.com/exclusives/grablok-a-linerless-label-wins-big-at-packaging-innovations-empack-2026/" target="_blank" rel="noopener"><p class="item-desc">라이너리스 라벨 &#x27;GrabLok&#x27;이 Packaging Innovations &amp; Empack 2026에서 주요 상을 수상했다. 라이너를 없애 폐기물과 원가를 동시에 줄이는 접근이 심사위원단의 높은 평가를 받았다.</p></a>
+<div class="item-insight">그래서— 라이너리스 기술의 시상 무대 진입은 상업화 단계가 임박했다는 신호다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://www.ajantabottle.com/public/blog/wp-content/uploads/2026/01/blog-Heading.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag">글로벌</span><span class="tag">S3상용</span><span class="tag">발상혁신</span><span class="tag">사용성</span></div>
+<a class="item-headline-link" href="https://www.ajantabottle.com/blog/glass-packaging-trends-2026/" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — 글래스 보틀, &#x27;플랫폼 디자인&#x27; 전략으로 전환</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-15</span><span class="meta-sep"> · </span>Ajanta Bottle</div>
+<a class="item-desc-link" href="https://www.ajantabottle.com/blog/glass-packaging-trends-2026/" target="_blank" rel="noopener"><p class="item-desc">2026년 유리 용기 트렌드는 하나의 강력한 보틀 실루엣을 여러 제품 라인에 재사용하는 &#x27;플랫폼 디자인&#x27;으로 수렴하고 있다. 향수·스킨케어 용기의 전통적인 &#x27;이중 바닥&#x27; 구조를 얇게 만들거나 없애는 경량화 흐름도 함께 나타났다.</p></a>
+<div class="item-insight">그래서— 용기 금형을 라인별로 새로 파던 관행이, 하나의 플랫폼을 재사용하는 방향으로 바뀌고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="http://www.labelsandlabeling.com/sites/labels/lnl/files/2026-08/loupeamericas.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag">미국</span><span class="tag">S3상용</span><span class="tag">기술혁신</span><span class="tag">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://www.labelsandlabeling.com/news/loupe-formerly-labelexpo/flexible-packaging-loupe-americas-2026" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — LOUPE Americas 2026 개막, HP Indigo 듀얼 프레스 시연</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-15</span><span class="meta-sep"> · </span>Labels &amp; Labeling</div>
+<a class="item-desc-link" href="https://www.labelsandlabeling.com/news/loupe-formerly-labelexpo/flexible-packaging-loupe-americas-2026" target="_blank" rel="noopener"><p class="item-desc">시카고 인근 로즈몬트에서 9월 15~17일 열린 LOUPE Americas 2026(구 Labelexpo Americas)에서 HP Indigo가 200K 디지털 프레스와 6K+ 프레스를 동시에 시연하며 라벨과 유연포장 양쪽에서의 활용성을 보여줬다. 400여 개 업체가 참가해 디지털·하이브리드 인쇄, 자동화, 지속가능 소재를 선보였다.</p></a>
+<div class="item-insight">그래서— 라벨과 유연포장 인쇄 장비의 경계가 한 장비 안에서 허물어지고 있다.</div>
+</div>
+</article><article class="item">
+
+<div class="item-body">
+<div class="item-tags"><span class="tag">미국</span><span class="tag">S2프로토</span><span class="tag">기술혁신</span><span class="tag">지속가능</span></div>
+<a class="item-headline-link" href="https://www.labelsandlabeling.com/news/loupe-formerly-labelexpo/flexible-packaging-loupe-americas-2026" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — Xeikon TX500, 단일층 배리어 필름에 실시간 인쇄 시연</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-15</span><span class="meta-sep"> · </span>Labels &amp; Labeling</div>
+<a class="item-desc-link" href="https://www.labelsandlabeling.com/news/loupe-formerly-labelexpo/flexible-packaging-loupe-americas-2026" target="_blank" rel="noopener"><p class="item-desc">Flint Group Digital의 Xeikon TX500 디지털 프레스가 LOUPE Americas 현장에서 Synthogra의 단일층 배리어 유연포장 소재에 실시간 표면 인쇄를 시연했다. 다층 구조 없이도 배리어 성능을 갖춘 필름에 직접 인쇄가 가능함을 보여줬다.</p></a>
+<div class="item-insight">그래서— 단일소재 배리어 필름 + 디지털 인쇄 조합이 재활용성과 인쇄 품질을 동시에 만족시킬 수 있다.</div>
+</div>
+</article><article class="item">
+
+<div class="item-body">
+<div class="item-tags"><span class="tag">미국</span><span class="tag">S2프로토</span><span class="tag">기술혁신</span><span class="tag">발상혁신</span></div>
+<a class="item-headline-link" href="https://www.labelsandlabeling.com/news/loupe-formerly-labelexpo/loupe-americas-2026-preview" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — Digital Inkjet Solutions, Jetsci dSpark 프레스 북미 첫 출시</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-14</span><span class="meta-sep"> · </span>Labels &amp; Labeling</div>
+<a class="item-desc-link" href="https://www.labelsandlabeling.com/news/loupe-formerly-labelexpo/loupe-americas-2026-preview" target="_blank" rel="noopener"><p class="item-desc">Monotech Systems의 디지털 임보싱 프레스 &#x27;Jetsci dSpark&#x27;가 Digital Inkjet Solutions를 통해 LOUPE Americas 2026에서 북미 시장에 처음 소개됐다. 라벨·패키징 후가공(임보싱) 공정을 디지털화하는 장비다.</p></a>
+<div class="item-insight">그래서— 후가공(엠보싱·박) 공정까지 디지털 전환이 확산되고 있다.</div>
+</div>
+</article><article class="item">
+
+<div class="item-body">
+<div class="item-tags"><span class="tag">미국</span><span class="tag">S3상용</span><span class="tag">지속가능</span><span class="tag">업계공인</span></div>
+<a class="item-headline-link" href="https://www.packagingdive.com/news/napcor-pet-recycling-data-bottles-thermoforms/807573/" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — 美 rPET 재활용업계, 공급과잉 속 폐업 잇따라</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-16</span><span class="meta-sep"> · </span>Packaging Dive</div>
+<a class="item-desc-link" href="https://www.packagingdive.com/news/napcor-pet-recycling-data-bottles-thermoforms/807573/" target="_blank" rel="noopener"><p class="item-desc">NAPCOR 최신 데이터에 따르면 미국 rPET 시장이 버진 수지 공급과잉과 수입 물량 증가로 어려움을 겪으며, 최근 12개월간 미국 내 재활용 업체 5곳이 문을 닫았다. 주 단위 rPET 함량 의무화 확대와 엇갈리는 흐름이다.</p></a>
+<div class="item-insight">그래서— 재활용 의무화가 늘어도 재활용 인프라 자체는 별개로 무너질 수 있다는 경고 신호다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://www.premiumbeautynews.com/local/cache-gd2/4a/23f515345934a17dbd75f5fcdd7360.jpg?1787602489" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag">유럽</span><span class="tag">S2프로토</span><span class="tag">발상혁신</span><span class="tag">지속가능</span></div>
+<a class="item-headline-link" href="https://www.premiumbeautynews.com/en/london-packaging-week-2026,28061" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 런던 패키징 위크, 리필형 혁신 26종 공개</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-16</span><span class="meta-sep"> · </span>Premium Beauty News</div>
+<a class="item-desc-link" href="https://www.premiumbeautynews.com/en/london-packaging-week-2026,28061" target="_blank" rel="noopener"><p class="item-desc">런던 엑셀에서 9월 16~17일 열린 London Packaging Week 2026의 Innovation Gallery가 럭셔리·뷰티·음료·FMCG 전반의 혁신 26종을 선정해 공개했다. 관람객 투표로 최고 혁신을 가리는 방식으로 진행됐다.</p></a>
+<div class="item-insight">그래서— 리필형·경량화 디자인이 이제 &#x27;특별한 시도&#x27;가 아니라 심사 기준의 기본값이 됐다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://www.premiumbeautynews.com/local/cache-gd2/4a/23f515345934a17dbd75f5fcdd7360.jpg?1787602489" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag">유럽</span><span class="tag">S2프로토</span><span class="tag">기술혁신</span><span class="tag">사용성</span></div>
+<a class="item-headline-link" href="https://www.premiumbeautynews.com/en/london-packaging-week-2026,28061" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — Holpeck, 리필형 에어리스 유리 자(jar) 공개</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-16</span><span class="meta-sep"> · </span>Premium Beauty News</div>
+<a class="item-desc-link" href="https://www.premiumbeautynews.com/en/london-packaging-week-2026,28061" target="_blank" rel="noopener"><p class="item-desc">Holpeck이 London Packaging Week에서 에어리스 시스템과 리필 가능한 PP 내부 실린더, 유리 외부 용기를 결합한 리필형 에어리스 자를 선보였다. 포뮬러를 습기·공기로부터 보호하면서도 고급스러운 외관을 유지한다.</p></a>
+<div class="item-insight">그래서— 에어리스 기능과 리필 구조를 동시에 만족시키는 용기 설계가 스킨케어 크림·밤류의 새 기준이 될 수 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://www.cosmeticsbusiness.com/article-image-alias/how-beauty-brands-are-tapping-the.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag">유럽</span><span class="tag">S3상용</span><span class="tag">사용성</span><span class="tag">지속가능</span></div>
+<a class="item-headline-link" href="https://www.cosmeticsbusiness.com/beauty-brands-are-tapping-the-tactile-packaging-trend" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 뷰티 브랜드, 무코팅 판지로 촉감 마케팅 강화</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-15</span><span class="meta-sep"> · </span>Cosmetics Business</div>
+<a class="item-desc-link" href="https://www.cosmeticsbusiness.com/beauty-brands-are-tapping-the-tactile-packaging-trend" target="_blank" rel="noopener"><p class="item-desc">뷰티 브랜드들이 코팅을 하지 않은 판지(uncoated paperboard) 소재를 활용해 개봉 순간의 촉감을 브랜드 경험의 일부로 만드는 흐름이 확산되고 있다. 재활용성과 감각적 만족을 동시에 노린 설계다.</p></a>
+<div class="item-insight">그래서— 소재의 &#x27;촉감&#x27;이 개봉 경험 설계의 새로운 변수로 떠올랐다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639240243783286807SZKAYU_Printing_1_.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag">중국</span><span class="tag">S3상용</span><span class="tag">기술혁신</span><span class="tag">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packaginginsights.com/news/china-flexible-packaging-recyclability.html" target="_blank" rel="noopener"><h3 class="item-headline">🇨🇳 중국 — 유연포장 업계, 재활용성·배리어 성능 균형점 모색</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-14</span><span class="meta-sep"> · </span>Packaging Insights</div>
+<a class="item-desc-link" href="https://www.packaginginsights.com/news/china-flexible-packaging-recyclability.html" target="_blank" rel="noopener"><p class="item-desc">중국 유연포장 업계가 재활용성 요구와 식품 보호를 위한 배리어 성능 사이에서 균형을 찾는 데 집중하고 있다. 국가 차원의 재자원화 목표(2030년까지 고형폐기물 45억 톤 활용)가 소재 개발 방향에 영향을 주고 있다.</p></a>
+<div class="item-insight">그래서— 중국발 배리어 필름 공급망도 재활용성 스펙을 기본으로 요구받게 될 가능성이 높다.</div>
+</div>
+</article><article class="item">
+
+<div class="item-body">
+<div class="item-tags"><span class="tag">인도</span><span class="tag">S3상용</span><span class="tag">업계공인</span><span class="tag">지속가능</span></div>
+<a class="item-headline-link" href="https://packagingsouthasia.com/type-of-packaging/flexible-packaging/packaging-6/" target="_blank" rel="noopener"><h3 class="item-headline">🇮🇳 인도 — 인도 포장업계, &#x27;플라스틱 폐기물 규정 2026&#x27; 대응 본격화</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-13</span><span class="meta-sep"> · </span>Packaging South Asia</div>
+<a class="item-desc-link" href="https://packagingsouthasia.com/type-of-packaging/flexible-packaging/packaging-6/" target="_blank" rel="noopener"><p class="item-desc">인도 포장업계가 중앙오염통제위원회(CPCB) 주도의 플라스틱 폐기물 규정 2026 시행에 맞춰 대응 체계를 정비하고 있다. 선언 기반 신고에서 성과 연동형 재활용성 책임제로 전환하는 흐름이 뚜렷해지고 있다.</p></a>
+<div class="item-insight">그래서— 인도 조달처의 EPR 신고 방식이 바뀌면, 협력사 실사 항목도 함께 바뀔 수 있다.</div>
+</div>
+</article><article class="item">
+
+<div class="item-body">
+<div class="item-tags"><span class="tag">글로벌</span><span class="tag">S3상용</span><span class="tag">지속가능</span><span class="tag">발상혁신</span></div>
+<a class="item-headline-link" href="https://beautymatter.com/articles/the-beauty-packaging-trends-set-to-define-2026" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — 알루미늄, 뷰티 패키징의 &#x27;탈플라스틱&#x27; 대안으로 부상</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-15</span><span class="meta-sep"> · </span>BeautyMatter</div>
+<a class="item-desc-link" href="https://beautymatter.com/articles/the-beauty-packaging-trends-set-to-define-2026" target="_blank" rel="noopener"><p class="item-desc">알루미늄이 2025년 뷰티 업계의 &#x27;깜짝 소재&#x27;로 떠오른 데 이어, 리필형 모델 확산과 함께 프리미엄화와 &#x27;플라스틱 프리&#x27; 대안이라는 두 가지 포지셔닝을 동시에 얻고 있다.</p></a>
+<div class="item-insight">그래서— 리필 용기 소재 선택지에 알루미늄이 유리·PCR 플라스틱과 나란히 오르고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://cdn.terrypacking.com/wp/2026/04/20260410175225225.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag">글로벌</span><span class="tag">S3상용</span><span class="tag">기술혁신</span><span class="tag">사용성</span></div>
+<a class="item-headline-link" href="https://www.terrypacking.com/industry-insights/2026-personal-care-filling-packaging-line-trends/" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — 개인케어 충전라인, 리필 파우치가 표준 사양으로 진화</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-10</span><span class="meta-sep"> · </span>Terry Packing</div>
+<a class="item-desc-link" href="https://www.terrypacking.com/industry-insights/2026-personal-care-filling-packaging-line-trends/" target="_blank" rel="noopener"><p class="item-desc">샴푸·로션·크림용 충전 라인이 퀵체인지 툴링과 서보 조정을 갖춰, 보틀·튜브·리필 파우치를 한 설비에서 전환 생산할 수 있는 방향으로 발전하고 있다. 완전 퇴비화 가능 복합필름과 누출방지 스파우트를 적용한 리필 파우치도 함께 확산 중이다.</p></a>
+<div class="item-insight">그래서— 리필 파우치 대응 여부가 이제 설비 투자 결정의 기본 조건이 되고 있다.</div>
+</div>
+</article></div>
+  </section>
+
+  <div class="footer">exj31 Packaging Intelligence · 구글 검색 기반 신호 수집 · 발행 지난 7일 신규 · 팩트 무손실(추측 금지)</div>
+</div>
+</body>
+</html>
