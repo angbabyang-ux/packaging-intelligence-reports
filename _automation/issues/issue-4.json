@@ -1,0 +1,351 @@
+{
+ "number": 4,
+ "date_range": "2026.09.25~10.01",
+ "masthead_title": "국경 넘는 규제, 군더더기 벗는 포장",
+ "summary": "이번 주는 '재활용 표시'를 둘러싼 규칙이 동시에 조여졌다 — 싱가포르 보증금제가 전환기간을 끝냈고, 캘리포니아 SB343은 시행일을 앞두고 법정에 묶였으며, 미국에서는 커피 캡슐의 '재활용 가능' 표시가 집단소송 대상이 됐다. 소재 현장에서는 낙엽 판지, 바이오 FDCA 첫 생산, 소형 플라스틱 회수 실증처럼 '친환경을 증명할 수 있는 소재'가 Luxe Pack Monaco와 업계 발표의 중심에 섰다.",
+ "reg_section_title": "재활용 표시, 법정과 계산대에 서다",
+ "newsletter_items": [
+  {
+   "flag": "🌏",
+   "region": "아세안",
+   "headline": "싱가포르 음료 보증금제, 10월 1일부터 전면 의무화",
+   "url": "https://www.khlaw.com/insights/singapore-implements-beverage-container-return-scheme",
+   "date": "2026-10-01",
+   "source": "KHL Law Insights",
+   "tags": [
+    "아세안",
+    "S3상용",
+    "지속가능",
+    "업계공인"
+   ],
+   "body": "싱가포르의 음료 용기 보증금제(BCRS)가 9월 30일로 6개월 전환기간을 마치고, 10월 1일부터 보증금 표시가 있는 용기만 판매할 수 있게 됐다. 150mL~3L 플라스틱·금속 음료 용기에는 10센트 보증금이 붙으며, 매장 면적 200㎡ 초과 슈퍼마켓은 회수 거점을 운영해야 한다.",
+   "insight": "그래서— 동남아에서도 '보증금형 회수'가 이제 선택이 아니라 시장 진입 조건이 됐다.",
+   "img": "https://www.khlaw.com/sites/default/files/2026-04/Singapore%20Deposit%20Mark.png",
+   "is_reg": true
+  },
+  {
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "캘리포니아 SB343, 10월 4일 시행 앞두고 가처분 제동 유지",
+   "url": "https://www.wastedive.com/news/california-sb343-preliminary-injunction-granted/825328/",
+   "date": "2026-10-04",
+   "source": "Waste Dive",
+   "tags": [
+    "미국",
+    "S3상용",
+    "업계공인",
+    "경쟁 추격"
+   ],
+   "body": "캘리포니아의 '진실 재활용법' SB343은 재활용 기준을 충족하지 못한 포장에 삼각화살표 표시 사용을 금지하며 10월 4일 시행을 앞두고 있다. 그러나 연방법원이 지난 7월 식품업계 등의 소송을 받아들여 집행을 잠정 중단시키면서, 시행일이 다가와도 법적 불확실성은 해소되지 않은 상태다.",
+   "insight": "그래서— 효력정지 상태라도 '재활용 표시 리스크'는 사라지지 않는다. 소송 결과가 뒤집히면 소급 대응 부담이 커진다.",
+   "img": "https://imgproxy.divecdn.com/PBDW6k--qQW9RG48dNxy56L2RauDo6J7mujBpiw1OwI/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMzUzNDY0MDcyLmpwZw==.webp",
+   "is_reg": true
+  },
+  {
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "美 의회, 무역대표부에 '자국 rPET 산업 보호' 서한",
+   "url": "http://resource-recycling.com/plastics/2026/09/25/us-lawmakers-urge-protection-of-domestic-rpet/",
+   "date": "2026-09-25",
+   "source": "Resource Recycling",
+   "tags": [
+    "미국",
+    "S3상용",
+    "경쟁 추격",
+    "지속가능"
+   ],
+   "body": "미 하원의원 5명이 지난 9월 무역대표부(USTR)에 서한을 보내, 해외 플라스틱 과잉생산이 자국산 재생 PET(rPET) 가격을 끌어내리고 있다며 구조적 과잉설비 조사에 이를 반영해달라고 요청했다. PET·rPET 수입품에 적용되던 상호관세 면제도 9월 들어 갑자기 종료된 것으로 전해졌다.",
+   "insight": "그래서— 순환경제 원료 조달이 이제 통상 분쟁의 대상이 되고 있다.",
+   "img": "https://resource-recycling.com/wp-content/uploads/2025/11/PET-bottle-and-flake-20190115-By-Aykut-Erdogdu-Shutterstock_155487050-web-1024x683-3.jpg",
+   "is_reg": true
+  },
+  {
+   "is_reg": true,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "KDP 커피 캡슐 '재활용 가능' 표시, 집단소송 3건 제기",
+   "url": "https://www.packagingdigest.com/sustainability/plaintiffs-talk-trash-about-kdp-s-recyclable-claims",
+   "date": "2026-09-25",
+   "source": "Packaging Digest",
+   "img": "https://eu-images.contentstack.com/v3/assets/blta023acee29658dfc/blt55277360840cd223/6ab6aba0bdd295b977377261/Coffee-pods-at-landfill.jpg?disable=upscale&width=1200&height=630&fit=crop",
+   "tags": [
+    "미국",
+    "S3상용",
+    "지속가능",
+    "경쟁 추격"
+   ],
+   "body": "폴리프로필렌(PP #5) 소재 1회용 커피 캡슐을 '재활용 가능'으로 표시한 큐리그 닥터페퍼(KDP)를 상대로 소비자 소송 3건이 잇따라 제기됐다. 원고 측은 작은 크기·불규칙한 형태·복합 소재 때문에 대부분 소비자가 실제로 재활용할 수 없으며, '지역 확인(check locally)' 단서 문구는 눈에 잘 띄지 않아 충분하지 않다고 주장했다.",
+   "insight": "그래서— '재활용 가능' 표시는 이제 문구가 아니라 실제 회수 인프라로 입증해야 하는 법적 리스크다."
+  },
+  {
+   "is_reg": false,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "RDM·Releaf, 도시 낙엽으로 만든 판지 'Eska Leaf' 공개",
+   "url": "https://packagingeurope.com/news/releaf-paper-and-rdm-group-reveal-recycled-board-made-from-fallen-leaves/14772.article",
+   "date": "2026-09-28",
+   "source": "Packaging Europe",
+   "img": "https://d2wrwj382xgrci.cloudfront.net/Pictures/1024x536/2/3/9/20239_pe_eska_leaf_852104.png",
+   "tags": [
+    "유럽",
+    "S2프로토",
+    "발상혁신",
+    "지속가능"
+   ],
+   "body": "RDM 그룹의 판지 브랜드 Eska가 소재 기업 Releaf와 손잡고 파리 등 대도시에서 수거한 낙엽 종이를 재생 판지에 합지한 'Eska Leaf'를 선보였다. 9월 28~30일 모나코 Luxe Pack에서 처음 공개됐으며, 낙엽 본연의 질감을 살려 럭셔리 브랜드용 프리미엄 패키지 소재로 제안됐다.",
+   "insight": "그래서— 폐기물의 '출신'이 곧 브랜드 스토리가 되는 소재가 럭셔리 패키징의 새 언어로 들어오고 있다."
+  },
+  {
+   "is_reg": false,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "Luxe Pack Monaco 2026, '폐기물 유래 소재·리필'이 주인공",
+   "url": "https://www.monacoecoart.com/post/luxe-pack-monaco-2026-sustainability-becomes-a-driver-of-luxury-packaging",
+   "date": "2026-09-28",
+   "source": "Monaco Eco Art",
+   "img": "https://static.wixstatic.com/media/60afe0_b189e96805b9439e8f74a217174456be~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/60afe0_b189e96805b9439e8f74a217174456be~mv2.jpg",
+   "tags": [
+    "유럽",
+    "S3상용",
+    "지속가능",
+    "업계공인"
+   ],
+   "body": "9월 28~30일 모나코 그리말디 포럼에서 약 380개 업체, 9,000명 이상이 참가한 럭셔리 패키징 전시회 Luxe Pack Monaco가 열렸다. 낙엽 판지, 코르크 기반 뷰티·향수 패키지 등 폐기물 유래 소재와 리필 포맷, 저영향 데코레이션이 올해 신제품의 공통 흐름으로 꼽혔다.",
+   "insight": "그래서— 럭셔리 뷰티 패키징의 경쟁축이 '친환경 소재 사용'에서 '포장 시스템 전체 재설계'로 넘어가고 있다."
+  },
+  {
+   "is_reg": false,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "Avantium, 세계 첫 상업용 FDCA 공장서 첫 배치 생산",
+   "url": "https://newsroom.avantium.com/avantium-announces-the-start-up-of-its-flagship-plant-with-the-first-batch-of-fdca-produced/",
+   "date": "2026-09-28",
+   "source": "Avantium",
+   "img": "https://content.presspage.com/uploads/3009/d9983e61-1e3c-4d8a-8eb6-35c3af7c120a/1920_avantium-0358-210126-2494.jpg?10000",
+   "tags": [
+    "유럽",
+    "S2프로토",
+    "기술혁신",
+    "지속가능"
+   ],
+   "body": "네덜란드 Avantium이 델프제일의 세계 첫 상업 규모 FDCA 공장에서 첫 배치 생산에 성공했다고 9월 28일 발표했다. FDCA는 식물 기반 폴리머 PEF의 핵심 원료로, 회사는 2026년 말 상업 판매를 시작하고 12~24개월에 걸쳐 설계 용량까지 끌어올릴 계획이다.",
+   "insight": "그래서— 바이오 기반 PEF 병·필름이 '연구 소재'에서 '구매 가능한 소재'로 넘어가는 첫 관문을 통과했다."
+  },
+  {
+   "is_reg": false,
+   "flag": "🇮🇳",
+   "region": "인도",
+   "headline": "Ball·Crown·Canpack, 인도 UP주 캔 공장에 656억 루피 투자",
+   "url": "https://ssmb.in/2026/09/30/global-packaging-firms-to-invest-rs-6566-cr-in-up/",
+   "date": "2026-09-30",
+   "source": "SSMB",
+   "img": "https://ssmb.in/wp-content/uploads/2026/09/Global-Packaging-Firms-to-Invest-1024x571.png",
+   "tags": [
+    "인도",
+    "S3상용",
+    "경쟁 추격",
+    "지속가능"
+   ],
+   "body": "글로벌 캔 제조사 Ball, Crown, Canpack이 인도 우타르프라데시주에 총 656.6억 루피(Rs 6,566 crore)를 투자해 알루미늄 캔 공장을 세운다. Crown은 운나오에 연 11.62억 개, Canpack은 연 약 13억 개 규모 설비를 짓고, Ball은 미루트에 약 291억 루피를 투입한다.",
+   "insight": "그래서— 인도 음료 포장의 무게중심이 플라스틱에서 재활용 가치가 높은 알루미늄 캔으로 이동하고 있다."
+  },
+  {
+   "flag": "🇬🇧",
+   "region": "영국",
+   "headline": "PiP Automation, 혁신 포장기계상 수상",
+   "url": "https://www.fdiforum.net/mag/production/pip-automation-wins-innovative-packaging-machinery-category-at-the-automate-uk-awards-2026/",
+   "date": "2026-09-29",
+   "source": "Food & Drink International",
+   "tags": [
+    "영국",
+    "S3상용",
+    "기술혁신",
+    "업계공인"
+   ],
+   "body": "영국 PiP Automation이 9월 23일 Automate UK Awards 2026에서 혁신 포장기계 부문을 수상했다. 수상작은 분당 최대 80개 섬유판 트레이를 처리하는 서보 구동 트레이 디네스터(denester)다.",
+   "insight": "그래서— 플라스틱 트레이를 섬유판으로 바꾸는 전환이 장비단에서부터 속도를 내고 있다.",
+   "img": "https://www.fdiforum.net/mag/wp-content/uploads/2026/09/automate-uk-awards-2026-winner-duncan-jon.jpg",
+   "is_reg": false
+  },
+  {
+   "flag": "🌏",
+   "region": "아세안",
+   "headline": "필리핀 CCIP, 화장품 업계 지속가능성 캠페인 결집",
+   "url": "https://manilatimes.net/2026/09/30/tmt-newswire/ccip-rallies-cosmetics-industry-around-sustainability/2434827",
+   "date": "2026-09-30",
+   "source": "Manila Times",
+   "tags": [
+    "아세안",
+    "S3상용",
+    "지속가능",
+    "업계공인"
+   ],
+   "body": "필리핀 화장품·세안용품 산업협회(CCIP)가 9월 30일 화장품 업계의 지속가능 포장 캠페인에 업계를 결집시켰다고 밝혔다. 포장 폐기물 저감과 재활용 가능 소재 전환을 공동 의제로 제시했다.",
+   "insight": "그래서— 동남아 뷰티 업계도 '개별 브랜드 선언'에서 '업계 공동 행동'으로 단계를 올리고 있다.",
+   "img": "https://manilatimes.net/manilatimes/uploads/images/2026/09/29/1237630.jpeg",
+   "is_reg": false
+  },
+  {
+   "flag": "🌐",
+   "region": "글로벌",
+   "headline": "디지털 제품여권, 화장품 포장 시장의 새 성장축으로",
+   "url": "https://fmiblog.com/2026/09/29/digital-product-passports-for-cosmetic-packaging-market-set-to-reach-usd-458-5-million-by-2036",
+   "date": "2026-09-29",
+   "source": "FMI Blog",
+   "tags": [
+    "글로벌",
+    "S2프로토",
+    "기술혁신",
+    "발상혁신"
+   ],
+   "body": "화장품 포장용 디지털 제품여권(DPP) 시장이 2026년 8,540만 달러에서 2036년 4억 5,850만 달러 규모로 성장할 것이라는 전망이 나왔다. QR코드 기반 솔루션이 접근성과 낮은 구현 장벽을 앞세워 2026년 시장의 38.5%를 차지할 것으로 예상된다.",
+   "insight": "그래서— '성분표'였던 라벨이 '이력 추적 데이터베이스'로 역할을 넓히고 있다.",
+   "img": "https://www.fmiblog.com/wp-content/uploads/2026/09/Digital-Product-Passports-for-Cosmetic-Packaging-Market.jpg",
+   "is_reg": false
+  },
+  {
+   "flag": "🌐",
+   "region": "글로벌",
+   "headline": "알루미늄 캔 재활용률 76%로 상승, 2030년 80% 목표 '사정권'",
+   "url": "https://www.alcircle.com/news/aluminium-cans-take-recycling-lead-at-76-industry-eyes-80-by-2030-121332",
+   "date": "2026-09-28",
+   "source": "AlCircle",
+   "tags": [
+    "글로벌",
+    "S3상용",
+    "지속가능",
+    "업계공인"
+   ],
+   "body": "2026년 집계 기준 알루미늄 캔의 글로벌 재활용률이 74.8%에서 76%로 올라섰다. 같은 기준으로 PET병은 회수율 69%·재활용률 54%, 유리병은 회수율 56%·재활용률 51%에 그쳐, 알루미늄이 음료 용기 재질 중 순환성 1위 자리를 지켰다.",
+   "insight": "그래서— 수치는 알루미늄이 앞서지만, 소비자 인식조사에서는 금속 포장을 '친환경'으로 꼽는 비율이 21%에 그친다. 성과와 인식의 간극이 다음 마케팅 과제다.",
+   "img": "https://assets.alcircle.com/dynamic/prod/news/20260928080400072_69fb30df9_lg.webp",
+   "is_reg": false
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "래핑카우, 100여 년 만에 패키지에서 '웃음' 지웠다",
+   "url": "https://www.packagingdigest.com/food-packaging/laughing-cow-stops-laughing-and-we-know-why",
+   "date": "2026-09-29",
+   "source": "Packaging Digest",
+   "img": "https://eu-images.contentstack.com/v3/assets/blta023acee29658dfc/blt7ca4c0f6edbf625f/6abc36a789b51b26400e0a8d/Sad-Laughing-Cow-Needs-to-Talk.jpg?disable=upscale&width=1200&height=630&fit=crop",
+   "tags": [
+    "미국",
+    "S3상용",
+    "발상혁신",
+    "사용성"
+   ],
+   "body": "Bel Brands의 스프레드 치즈 '래핑카우'가 9월 말 일부 한정 패키지에서 100여 년 만에 처음으로 웃지 않는 소 캐릭터와 '우리 얘기 좀 해(We need to talk)' 문구를 넣었다. 패키지의 QR코드는 단서 영상이 담긴 캠페인 사이트로 연결되며, 업계에서는 10월 10일 세계 정신건강의 날과 연계한 캠페인으로 보고 있다.",
+   "insight": "그래서— 패키지 자체가 '대화를 거는 미디어'가 되면서, 한정판 디자인 변경이 가장 강력한 캠페인 도구로 쓰이고 있다."
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "크래프트하인즈, '소형 플라스틱 회수 더는 이론 아냐'",
+   "url": "https://www.packagingdigest.com/sustainability/kraft-heinz-tackles-small-plastic-packaging-recovery",
+   "date": "2026-09-30",
+   "source": "Packaging Digest",
+   "img": "https://eu-images.contentstack.com/v3/assets/blta023acee29658dfc/blt89716b8debf4228b/6abd475c8e913fd2baab5738/Major-brands-support-small-format-materials-recoverySmalls-top-ftd.jpg?disable=upscale&width=1200&height=630&fit=crop",
+   "tags": [
+    "미국",
+    "S3상용",
+    "지속가능",
+    "업계공인"
+   ],
+   "body": "크래프트하인즈가 Closed Loop Partners 주도의 'Smalls 컨소시엄' 참여 결과, 캡·뚜껑·소형 화장품 용기 같은 소형 포장재 회수가 '더 이상 이론이 아니다'라고 밝혔다. 기존 기술로도 적절한 위치와 조건에서 적용하면 재활용 과정에서 유실되던 소재를 회수할 수 있다는 점이 확인됐다.",
+   "insight": "그래서— 소형 화장품 용기도 '재활용 불가' 영역에서 벗어날 수 있는 회수 근거가 쌓이고 있다."
+  },
+  {
+   "flag": "🇰🇷",
+   "region": "한국",
+   "headline": "연우, 에어리스 친환경 기술로 유럽 뷰티 패키징 공략",
+   "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04529686645585368",
+   "date": "2026-09-30",
+   "source": "이데일리",
+   "tags": [
+    "한국",
+    "S3상용",
+    "기술혁신",
+    "지속가능"
+   ],
+   "body": "한국콜마 자회사이자 화장품 용기 전문기업 연우가 에어리스 펌프 기술에 친환경 설계를 결합한 패키징으로 유럽 시장 공략을 강화하고 있다. 유럽 최대 패키징 전시회인 '파리 패키징 위크'에서 관련 제품으로 여섯 차례 수상한 것으로 전해졌다.",
+   "insight": "그래서— K-뷰티에 이어 'K-패키징'도 유럽 무대에서 기술력으로 승부를 보기 시작했다.",
+   "img": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/09/PS26093001551.jpg",
+   "is_reg": false
+  },
+  {
+   "flag": "🇰🇷",
+   "region": "한국",
+   "headline": "코스메서비스, 'EU PPWR 대응 전략' 제시",
+   "url": "https://cosinkorea.com/news/article.html?no=58402",
+   "date": "2026-09-29",
+   "source": "코스인코리아",
+   "tags": [
+    "한국",
+    "S3상용",
+    "업계공인",
+    "경쟁 추격"
+   ],
+   "body": "화장품 패키징 솔루션 기업 코스메서비스가 PPWR 본격 적용에 따른 국내 화장품 기업의 대응 전략을 제시했다. 용기·라벨·캡·단상자부터 운송용 포장까지 공급망 전반의 기술정보 관리가 필요하다는 점을 강조했다.",
+   "insight": "그래서— PPWR 대응은 1차 용기 설계만이 아니라 2차·3차 포장까지 아우르는 '공급망 전체 과제'로 확장되고 있다.",
+   "img": "https://www.cosinkorea.com/data/photos/20260940/art_17906201211316_0ac2c2.jpg",
+   "is_reg": false
+  }
+ ],
+ "regulation_current": [
+  {
+   "url": "https://environment.ec.europa.eu/news/new-eu-rules-packaging-enter-application-2026-08-11_en",
+   "title": "EU PPWR, 중금속·PFAS 함유량 제한 가동",
+   "body": "지난 8월 12일부터 EU 포장·포장폐기물규정(PPWR)의 1차 의무가 발효되며, 포장재 내 납·카드뮴·수은·6가크롬의 총 함유량이 품목당 100mg/kg을 넘지 않도록 제한하는 규정이 가동됐다. 식품접촉 포장에 대한 과불화화합물(PFAS) 사용 제한과 우려물질 최소화 일반 의무도 같은 날부터 적용되고 있다."
+  },
+  {
+   "url": "https://www.hklaw.com/en/insights/publications/2026/01/the-latest-pandoras-box-what-you-need-to-know-now-about-state-epr-laws",
+   "title": "미국 7개 주 포장재 EPR 시행 단계 진입",
+   "body": "미국에서는 메인·오레곤·콜로라도·캘리포니아·미네소타·메릴랜드·워싱턴 등 7개 주가 포장재 생산자책임재활용제도(EPR)를 운영하고 있다. 콜로라도·오레곤·미네소타는 생산자 등록을 이미 마쳤고, 메인·메릴랜드·워싱턴은 2026년 중 첫 등록 마감이, 캘리포니아는 2027년 1월 1일까지 생산자책임단체(PRO) 계획 참여 승인이 예정돼 있다."
+  },
+  {
+   "url": "https://www.wastedive.com/news/california-sb343-preliminary-injunction-granted/825328/",
+   "title": "캘리포니아 SB343, 10월 4일 시행 앞두고 가처분 상태 유지",
+   "body": "재활용 표시 요건을 강화한 캘리포니아 SB343 '진실 재활용법'이 10월 4일 시행을 앞두고 있지만, 지난 7월 연방법원이 업계의 표현의 자유(수정헌법 1조) 침해 주장에 근거가 있다고 보고 주 검찰총장의 집행을 금지하는 가처분을 내린 상태가 유지되고 있다."
+  },
+  {
+   "url": "https://www.khlaw.com/insights/singapore-implements-beverage-container-return-scheme",
+   "title": "싱가포르 음료 용기 보증금제, 10월 1일부터 전면 의무화",
+   "body": "싱가포르의 음료 용기 보증금제(BCRS)가 10월 1일부터 전환기간을 끝내고 완전 시행 단계에 들어갔다. 보증금 표시가 없는 기존 재고의 유예 판매가 종료되면서, 이제 150mL~3L 플라스틱·금속 음료 용기는 보증금 표시가 있어야만 시장에서 판매할 수 있다."
+  },
+  {
+   "url": "https://peopledaily.digital/business/why-kenyans-risk-heavy-fines-and-jail-time-over-banned-plastic-bags-without-knowing-it/amp",
+   "title": "케냐, 비닐봉투 금지 단속 강화 — 무역상 체포 잇따라",
+   "body": "케냐 국가환경관리청(NEMA)이 9월 말 비닐봉투 금지 규정 단속을 강화하면서 해안 지역에서 상인 5명이 체포됐다. 다수의 케냐 소상공인이 단속 대상인 줄 모른 채 금지 비닐봉투를 유통하다 적발되는 사례가 이어지고 있다."
+  }
+ ],
+ "regulation_future": [
+  {
+   "title": "PPWR 재사용 포장 QR 라벨, 2029년 2월부터 의무화",
+   "url": "https://www.coolset.com/academy/ppwr-what-companies-must-have-in-place-from-august-12-2026",
+   "body": "PPWR에 따라 재사용 포장에는 2029년 2월 12일부터 QR코드 등 디지털 정보가 담긴 재사용 라벨 표시가 의무화된다. 회수·재사용 이력을 디지털로 관리할 수 있도록 제품 데이터 체계를 미리 갖추는 것이 선행 과제로 꼽힌다."
+  },
+  {
+   "title": "PPWR 퇴비화 의무, 2028년 2월부터 티백·커피패드 등 적용",
+   "url": "https://ppwratlas.com/articles/article-9/",
+   "body": "PPWR 제9조에 따라 2028년 2월 12일부터 티백·커피 패드 등 1회용 차·커피 포장과 과일·채소용 스티커 라벨은 재활용이 아닌 퇴비화 가능 소재로 만들어야 한다. 산업용 퇴비화 조건을 충족해야 하며, 회원국에 따라 가정용 퇴비화 조건이 추가로 요구될 수 있다."
+  },
+  {
+   "url": "https://www.coolset.com/academy/ppwr-what-companies-must-have-in-place-from-august-12-2026",
+   "title": "PPWR 재질 구성 통일 라벨, 2028년 8월부터 표시 의무화",
+   "body": "2028년 8월 12일부터 EU 전역의 포장재에 재질 구성과 분리배출 방법을 알리는 통일 픽토그램 라벨 표시가 의무화된다(이행법 발효 후 24개월 중 늦은 날 기준). 회원국별로 제각각이던 분리배출 표시 체계가 단일 규격으로 통합되는 것이 핵심이다."
+  },
+  {
+   "url": "https://www.coolset.com/academy/ppwr-compliance-deadlines-explained-what-applies-from-august-2026-and-what-comes-later",
+   "title": "PPWR 재활용 등급·재생원료 함유 목표, 2030년부터 단계 적용",
+   "body": "PPWR의 재활용성 등급 분류와 재생원료 사용 비율 목표는 2030년부터 단계적으로 적용될 예정이다. 포장재별 재활용 등급에 따라 EPR 수수료를 차등화하는 에코모듈레이션 체계와 맞물려 도입될 전망이다."
+  },
+  {
+   "title": "EU, 2029년까지 음료 용기 90% 분리수거·보증금제 사실상 의무화",
+   "url": "https://ppwratlas.com/articles/article-50/",
+   "body": "PPWR 제50조에 따라 회원국은 2029년 1월 1일까지 3L 이하 1회용 플라스틱 음료병과 금속 음료 용기를 매년 무게 기준 90% 이상 분리수거해야 하며, 이를 위해 보증금 반환제도(DRS)를 도입해야 한다. 2026년 분리수거율 80% 이상을 달성한 회원국만 제한적으로 면제받을 수 있다."
+  }
+ ]
+}
