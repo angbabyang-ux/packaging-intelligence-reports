@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포장재 인텔리전스 4호</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FAF8F4; --ink: #17191D; --ink-soft: #4A4D55; --slate: #6B6F7B;
+  --accent: #1B4FE0; --accent-soft: #EEF2FF; --accent-line: #C9D6FB;
+  --line: #E6E4DC; --card: #FFFFFF;
+  --tag-neutral: #5B5F69; --tag-neutral-line: #DEDCD3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+    --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+    --line: #2A2B30; --card: #1B1C22;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+  --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+  --line: #2A2B30; --card: #1B1C22;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; padding: 0 16px; }
+.wrap { max-width: 720px; margin: 0 auto; padding-block: 48px 80px; }
+.masthead { padding-bottom: 28px; border-bottom: 2px solid var(--ink); margin-bottom: 32px; }
+.kicker { font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; margin: 0 0 14px; }
+.masthead-title { font-family: 'Noto Serif KR', serif; font-weight: 900;
+  font-size: clamp(32px, 6vw, 46px); line-height: 1.18; letter-spacing: -0.01em;
+  margin: 0 0 18px; text-wrap: balance; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 13px; color: var(--slate);
+  font-variant-numeric: tabular-nums; }
+.meta-bar b { color: var(--ink); font-weight: 700; }
+.meta-bar .accent { color: var(--accent); font-weight: 700; }
+.meta-sep { margin: 0 10px; color: var(--line); }
+.summary { border: 1px solid var(--accent-line); background: var(--accent-soft);
+  border-radius: 4px; padding: 22px 24px; margin-bottom: 40px; }
+.summary-label { font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: var(--accent);
+  margin: 0 0 10px; text-transform: uppercase; }
+.summary p { margin: 0; font-size: 15.5px; line-height: 1.75; color: var(--ink); }
+.section { margin-bottom: 44px; }
+.section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 4px;
+  border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+.section-kicker { font-size: 12px; letter-spacing: 0.16em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; white-space: nowrap; }
+.section-title { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 20px;
+  margin: 0; color: var(--ink-soft); }
+.item-grid { display: flex; flex-direction: column; }
+.item { display: grid; grid-template-columns: 168px 1fr; gap: 20px;
+  padding: 26px 0; border-bottom: 1px solid var(--line); }
+.item:last-child { border-bottom: none; }
+.item-media { width: 168px; aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden;
+  background: var(--line); border: 1px solid var(--line); }
+.item-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.item:not(:has(.item-media)) { grid-template-columns: 1fr; }
+.item-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 9px; }
+.tag { font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px;
+  white-space: nowrap; line-height: 1.5; }
+.tag-blue { border: 1px solid var(--accent-line); color: var(--accent); }
+.tag-neutral { border: 1px solid var(--tag-neutral-line); color: var(--tag-neutral); }
+a.item-headline-link, a.item-desc-link { text-decoration: none; color: inherit; }
+.item-headline { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 17.5px;
+  line-height: 1.34; letter-spacing: -0.005em; margin: 0 0 6px; color: var(--ink); }
+a.item-headline-link:hover .item-headline { color: var(--accent); }
+.item-meta { font-size: 12px; color: var(--slate); margin-bottom: 8px; }
+.item-desc { font-size: 14px; line-height: 1.64; color: var(--ink-soft); margin: 0 0 10px; max-width: 65ch; }
+.item-insight { border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0;
+  padding: 8px 14px; font-size: 13px; line-height: 1.6; color: var(--accent); background: var(--accent-soft); }
+.footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+  font-size: 11.5px; line-height: 1.8; color: var(--slate); }
+@media (max-width: 560px) {
+  .item { grid-template-columns: 96px 1fr; gap: 14px; }
+  .item-media { width: 96px; }
+  .item-headline { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="kicker">PACKAGING INTELLIGENCE · WEEKLY</p>
+    <h1 class="masthead-title">국경 넘는 규제, 군더더기 벗는 포장</h1>
+    <div class="meta-bar">
+      <span class="accent">4호</span><span class="meta-sep">·</span>
+      2026.09.25 – 10.01<span class="meta-sep">·</span>
+      신선 <b>16</b>건<span class="meta-sep">·</span>
+      규제 <span class="accent">3</span><span class="meta-sep">·</span>
+      사진 0
+    </div>
+  </header>
+
+  <div class="summary">
+    <p class="summary-label">AI 요약 노트</p>
+    <p>이번 주는 '규제의 동시다발 발효'가 두드러졌다 — 싱가포르 보증금제 전면 시행, 캘리포니아 SB343 시행일 임박, EU PPWR 유해물질 제한 가동이 같은 주에 겹쳤다. 동시에 소재 현장에서는 라이너리스 라벨과 섬유 기반 포장재가 전시장 수상대를 휩쓸며 '규제 대응'이 아니라 '기본 사양'으로 자리잡는 흐름이 뚜렷했다. 미국에서는 자국 rPET 산업을 지키려는 통상 압박까지 등장해, 순환경제가 무역 이슈로 번지는 양상도 포착됐다.</p>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">규제 레이더 · REGULATION</span>
+      <h2 class="section-title">시행일이 다가오자 법정이 움직였다</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">아세안</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.khlaw.com/insights/singapore-implements-beverage-container-return-scheme" target="_blank" rel="noopener"><h3 class="item-headline">🌏 아세안 — 싱가포르 음료 보증금제, 10월 1일부터 전면 의무화</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-01</span><span class="meta-sep"> · </span>KHL Law Insights</div>
+<a class="item-desc-link" href="https://www.khlaw.com/insights/singapore-implements-beverage-container-return-scheme" target="_blank" rel="noopener"><p class="item-desc">싱가포르의 음료 용기 보증금제(BCRS)가 10월 1일부터 전환기간을 끝내고 전면 시행에 들어갔다. 150mL~3L 플라스틱·금속 음료 용기에는 보증금 표시와 10센트 환불형 보증금이 의무 부착되며, 200㎡ 이상 대형 매장은 회수 거점을 운영해야 한다.</p></a>
+<div class="item-insight">그래서— 동남아에서도 '보증금형 회수'가 이제 선택이 아니라 시장 진입 조건이 됐다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-blue">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://www.wastedive.com/news/california-sb343-preliminary-injunction-granted/825328/" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — 캘리포니아 SB343, 10월 4일 시행 앞두고 가처분 제동 유지</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-04</span><span class="meta-sep"> · </span>Waste Dive</div>
+<a class="item-desc-link" href="https://www.wastedive.com/news/california-sb343-preliminary-injunction-granted/825328/" target="_blank" rel="noopener"><p class="item-desc">캘리포니아의 '진실 재활용법' SB343은 재활용 기준을 충족하지 못한 포장에 삼각화살표 표시 사용을 금지하며 10월 4일 시행을 앞두고 있다. 그러나 연방법원이 지난 7월 식품업계 등의 소송을 받아들여 집행을 잠정 중단시키면서, 시행일이 다가와도 법적 불확실성은 해소되지 않은 상태다.</p></a>
+<div class="item-insight">그래서— 효력정지 상태라도 '재활용 표시 리스크'는 사라지지 않는다. 소송 결과가 뒤집히면 소급 대응 부담이 커진다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">경쟁 추격</span><span class="tag tag-neutral">지속가능</span></div>
+<a class="item-headline-link" href="http://resource-recycling.com/plastics/2026/09/25/us-lawmakers-urge-protection-of-domestic-rpet/" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — 美 의회, 무역대표부에 '자국 rPET 산업 보호' 서한</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-25</span><span class="meta-sep"> · </span>Resource Recycling</div>
+<a class="item-desc-link" href="http://resource-recycling.com/plastics/2026/09/25/us-lawmakers-urge-protection-of-domestic-rpet/" target="_blank" rel="noopener"><p class="item-desc">미 하원의원 5명이 지난 9월 무역대표부(USTR)에 서한을 보내, 해외 플라스틱 과잉생산이 자국산 재생 PET(rPET) 가격을 끌어내리고 있다며 구조적 과잉설비 조사에 이를 반영해달라고 요청했다. PET·rPET 수입품에 적용되던 상호관세 면제도 9월 들어 갑자기 종료된 것으로 전해졌다.</p></a>
+<div class="item-insight">그래서— 순환경제 원료 조달이 이제 통상 분쟁의 대상이 되고 있다.</div>
+</div>
+</article></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">이번 주 신호 · SIGNALS</span>
+      <h2 class="section-title">그 외 혁신 신호</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.packworld.com/trends/pmmi-news/news/22975452/pmmi-the-association-for-packaging-and-processing-technologies-the-industry-comes-together-at-pack-expo-international-2026" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — PACK EXPO International 2026, 9월 30일 폐막</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-30</span><span class="meta-sep"> · </span>Packaging World</div>
+<a class="item-desc-link" href="https://www.packworld.com/trends/pmmi-news/news/22975452/pmmi-the-association-for-packaging-and-processing-technologies-the-industry-comes-together-at-pack-expo-international-2026" target="_blank" rel="noopener"><p class="item-desc">미국 포장·가공기술협회(PMMI)가 주최한 PACK EXPO International 2026이 9월 30일 막을 내렸다. 자동화·로봇·지속가능 소재를 아우르는 전시로, 포장업계 전반이 한자리에 모이는 올해 최대 규모 행사 중 하나로 꼽혔다.</p></a>
+<div class="item-insight">그래서— 자동화와 지속가능 소재가 더 이상 별개 트랙이 아니라 하나의 전시 동선으로 묶이고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.foodlogistics.com/warehousing/packaging/news/22973623/iconex-iconex-introduces-rfid-linerless-label-technology" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — Iconex, RFID 결합 라이너리스 라벨 출시</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09</span><span class="meta-sep"> · </span>Food Logistics</div>
+<a class="item-desc-link" href="https://www.foodlogistics.com/warehousing/packaging/news/22973623/iconex-iconex-introduces-rfid-linerless-label-technology" target="_blank" rel="noopener"><p class="item-desc">라벨 제조사 Iconex가 특허 출원 중인 'Iconex Connect' RFID 라이너리스 라벨을 선보였다. 배면지(라이너) 폐기물을 없애는 라이너리스 기술에 RFID 식별 기능을 결합해, 유통 추적성과 자원 효율을 동시에 노린 제품이다.</p></a>
+<div class="item-insight">그래서— 라이너리스는 이제 '폐기물 감축'을 넘어 '추적성'까지 흡수하는 플랫폼으로 진화 중이다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packaginginsights.com/news/interpack-2026-upm-basf-fiber-packaging.html" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — UPM·BASF, 섬유 기반 고성능 포장재 공동 공개</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09</span><span class="meta-sep"> · </span>Packaging Insights</div>
+<a class="item-desc-link" href="https://www.packaginginsights.com/news/interpack-2026-upm-basf-fiber-packaging.html" target="_blank" rel="noopener"><p class="item-desc">UPM과 BASF가 UPM의 배리어 종이 기술과 BASF의 Joncryl HPB 코팅 기술을 결합한 고성능 섬유 기반 포장재를 공개했다. 재활용 설계(Design-for-Recycling) 기준에 맞춰, 기존 플라스틱 기반 구조를 대체할 수 있는 재활용 가능 소재로 소개됐다.</p></a>
+<div class="item-insight">그래서— 배리어 성능과 재활용성을 동시에 잡는 종이 소재가 '시제품'에서 '합작 상용화' 단계로 넘어가고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.packaginginsights.com/news/koehler-sappi-paptic-metsa-board-paperization-ppwr.html" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 쾰러·사피·메차보드, '페이퍼라이제이션' 양산 본격화</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09</span><span class="meta-sep"> · </span>Packaging Insights</div>
+<a class="item-desc-link" href="https://www.packaginginsights.com/news/koehler-sappi-paptic-metsa-board-paperization-ppwr.html" target="_blank" rel="noopener"><p class="item-desc">쾰러, 사피, 팹틱, 메차보드 등 유럽 제지업체들이 PPWR 시행에 맞춰 섬유 기반 배리어 종이의 양산 체계를 확대하고 있다. 사피는 이번을 '기능성 종이가 기존 가공 설비에서 성능 손실 없이 경쟁할 수 있는 성숙 단계에 도달한 시점'이라고 평가했다.</p></a>
+<div class="item-insight">그래서— '종이화(paperization)'가 마케팅 구호에서 실제 생산라인 전환으로 넘어갔다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">영국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">업계공인</span></div>
+<a class="item-headline-link" href="https://www.fdiforum.net/mag/production/pip-automation-wins-innovative-packaging-machinery-category-at-the-automate-uk-awards-2026/" target="_blank" rel="noopener"><h3 class="item-headline">🇬🇧 영국 — PiP Automation, 혁신 포장기계상 수상</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-23</span><span class="meta-sep"> · </span>Food &amp; Drink International</div>
+<a class="item-desc-link" href="https://www.fdiforum.net/mag/production/pip-automation-wins-innovative-packaging-machinery-category-at-the-automate-uk-awards-2026/" target="_blank" rel="noopener"><p class="item-desc">영국 PiP Automation이 9월 23일 Automate UK Awards 2026에서 혁신 포장기계 부문을 수상했다. 수상작은 분당 최대 80개 섬유판 트레이를 처리하는 서보 구동 트레이 디네스터(denester)다.</p></a>
+<div class="item-insight">그래서— 플라스틱 트레이를 섬유판으로 바꾸는 전환이 장비단에서부터 속도를 내고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">인도</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">발상혁신</span></div>
+<a class="item-headline-link" href="https://www.packaging-gateway.com/news/indias-circular-economy-flexible-packaging/" target="_blank" rel="noopener"><h3 class="item-headline">🇮🇳 인도 — 인도, 유연포장 순환경제 전환 로드맵 발표</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09</span><span class="meta-sep"> · </span>Packaging Gateway</div>
+<a class="item-desc-link" href="https://www.packaging-gateway.com/news/indias-circular-economy-flexible-packaging/" target="_blank" rel="noopener"><p class="item-desc">인도 정부와 업계가 유연포장 분야의 순환경제 전환을 위한 로드맵을 공개했다. 모노머티리얼 설계 확대와 생산자책임재활용제도(EPR) 연계를 통해 재활용 인프라를 끌어올리는 것이 핵심 방향으로 제시됐다.</p></a>
+<div class="item-insight">그래서— 세계 최대 인구 시장의 유연포장이 '재활용 불가'라는 꼬리표를 떼기 위한 본격 설계 전환에 들어갔다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">중국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-blue">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://www.prnewswire.com/apac/news-releases/wepack-2026-concludes-on-a-record-high-reinforcing-chinas-role-at-the-heart-of-the-global-packaging-industry-302752990.html" target="_blank" rel="noopener"><h3 class="item-headline">🇨🇳 중국 — WEPACK 2026, 역대 최대 규모로 폐막</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09</span><span class="meta-sep"> · </span>PR Newswire</div>
+<a class="item-desc-link" href="https://www.prnewswire.com/apac/news-releases/wepack-2026-concludes-on-a-record-high-reinforcing-chinas-role-at-the-heart-of-the-global-packaging-industry-302752990.html" target="_blank" rel="noopener"><p class="item-desc">상하이에서 열린 인쇄·포장 전시회 WEPACK 2026이 역대 최대 규모로 막을 내리며 글로벌 포장 산업에서 중국의 위상을 재확인했다. 디지털 인쇄, 포장 가공 설비 전반에 걸쳐 참가 업체와 관람객 수가 전년 대비 늘었다.</p></a>
+<div class="item-insight">그래서— 중국은 '세계의 공장'을 넘어 포장 장비·소재 전시의 허브로도 영향력을 넓히고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">아세안</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://manilatimes.net/2026/09/30/tmt-newswire/ccip-rallies-cosmetics-industry-around-sustainability/2434827" target="_blank" rel="noopener"><h3 class="item-headline">🌏 아세안 — 필리핀 CCIP, 화장품 업계 지속가능성 캠페인 결집</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-30</span><span class="meta-sep"> · </span>Manila Times</div>
+<a class="item-desc-link" href="https://manilatimes.net/2026/09/30/tmt-newswire/ccip-rallies-cosmetics-industry-around-sustainability/2434827" target="_blank" rel="noopener"><p class="item-desc">필리핀 화장품·세안용품 산업협회(CCIP)가 9월 30일 화장품 업계의 지속가능 포장 캠페인에 업계를 결집시켰다고 밝혔다. 포장 폐기물 저감과 재활용 가능 소재 전환을 공동 의제로 제시했다.</p></a>
+<div class="item-insight">그래서— 동남아 뷰티 업계도 '개별 브랜드 선언'에서 '업계 공동 행동'으로 단계를 올리고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">발상혁신</span></div>
+<a class="item-headline-link" href="https://fmiblog.com/2026/09/29/digital-product-passports-for-cosmetic-packaging-market-set-to-reach-usd-458-5-million-by-2036" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — 디지털 제품여권, 화장품 포장 시장의 새 성장축으로</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09-29</span><span class="meta-sep"> · </span>FMI Blog</div>
+<a class="item-desc-link" href="https://fmiblog.com/2026/09/29/digital-product-passports-for-cosmetic-packaging-market-set-to-reach-usd-458-5-million-by-2036" target="_blank" rel="noopener"><p class="item-desc">화장품 포장용 디지털 제품여권(DPP) 시장이 2026년 8,540만 달러에서 2036년 4억 5,850만 달러 규모로 성장할 것이라는 전망이 나왔다. QR코드 기반 솔루션이 접근성과 낮은 구현 장벽을 앞세워 2026년 시장의 38.5%를 차지할 것으로 예상된다.</p></a>
+<div class="item-insight">그래서— '성분표'였던 라벨이 '이력 추적 데이터베이스'로 역할을 넓히고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.alcircle.com/news/aluminium-cans-take-recycling-lead-at-76-industry-eyes-80-by-2030-121332" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — 알루미늄 캔 재활용률 76%로 상승, 2030년 80% 목표 '사정권'</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09</span><span class="meta-sep"> · </span>AlCircle</div>
+<a class="item-desc-link" href="https://www.alcircle.com/news/aluminium-cans-take-recycling-lead-at-76-industry-eyes-80-by-2030-121332" target="_blank" rel="noopener"><p class="item-desc">2026년 집계 기준 알루미늄 캔의 글로벌 재활용률이 74.8%에서 76%로 올라섰다. 같은 기준으로 PET병은 회수율 69%·재활용률 54%, 유리병은 회수율 56%·재활용률 51%에 그쳐, 알루미늄이 음료 용기 재질 중 순환성 1위 자리를 지켰다.</p></a>
+<div class="item-insight">그래서— 수치는 알루미늄이 앞서지만, 소비자 인식조사에서는 금속 포장을 '친환경'으로 꼽는 비율이 21%에 그친다. 성과와 인식의 간극이 다음 마케팅 과제다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-blue">발상혁신</span><span class="tag tag-neutral">지속가능</span></div>
+<a class="item-headline-link" href="https://www.interpack.com/en/Media_News/interpack_Magazin/Material_Design/Seaweed-based_packaging_gaining_traction_as_a_plastic_alternative" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — 해조류 기반 포장재, 플라스틱 대안으로 존재감 확대</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09</span><span class="meta-sep"> · </span>interpack</div>
+<a class="item-desc-link" href="https://www.interpack.com/en/Media_News/interpack_Magazin/Material_Design/Seaweed-based_packaging_gaining_traction_as_a_plastic_alternative" target="_blank" rel="noopener"><p class="item-desc">노트플라(Notpla), 스웨이(Sway) 등 해조류 기반 생분해 포장재 스타트업들의 기술이 업계 전시에서 플라스틱 대안으로 주목받고 있다. 노트플라는 영국 Levy UK+Ireland와 계약을 맺고 향후 3년간 약 7,500만 개의 해조류 기반 식품 포장재를 공급하기로 했다.</p></a>
+<div class="item-insight">그래서— 해조류 포장은 더 이상 '컨셉 전시물'이 아니라 실제 공급 계약으로 증명되는 단계에 들어섰다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">한국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://edaily.co.kr/News/Read?mediaCodeNo=257&amp;newsId=04529686645585368" target="_blank" rel="noopener"><h3 class="item-headline">🇰🇷 한국 — 연우, 에어리스 친환경 기술로 유럽 뷰티 패키징 공략</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09</span><span class="meta-sep"> · </span>이데일리</div>
+<a class="item-desc-link" href="https://edaily.co.kr/News/Read?mediaCodeNo=257&amp;newsId=04529686645585368" target="_blank" rel="noopener"><p class="item-desc">한국콜마 자회사이자 화장품 용기 전문기업 연우가 에어리스 펌프 기술에 친환경 설계를 결합한 패키징으로 유럽 시장 공략을 강화하고 있다. 유럽 최대 패키징 전시회인 '파리 패키징 위크'에서 관련 제품으로 여섯 차례 수상한 것으로 전해졌다.</p></a>
+<div class="item-insight">그래서— K-뷰티에 이어 'K-패키징'도 유럽 무대에서 기술력으로 승부를 보기 시작했다.</div>
+</div>
+</article><article class="item">
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">한국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-blue">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://cosinkorea.com/news/article.html?no=58402" target="_blank" rel="noopener"><h3 class="item-headline">🇰🇷 한국 — 코스메서비스, 'EU PPWR 대응 전략' 제시</h3></a>
+<div class="item-meta"><span class="meta-date">2026-09</span><span class="meta-sep"> · </span>코스인코리아</div>
+<a class="item-desc-link" href="https://cosinkorea.com/news/article.html?no=58402" target="_blank" rel="noopener"><p class="item-desc">화장품 패키징 솔루션 기업 코스메서비스가 PPWR 본격 적용에 따른 국내 화장품 기업의 대응 전략을 제시했다. 용기·라벨·캡·단상자부터 운송용 포장까지 공급망 전반의 기술정보 관리가 필요하다는 점을 강조했다.</p></a>
+<div class="item-insight">그래서— PPWR 대응은 1차 용기 설계만이 아니라 2차·3차 포장까지 아우르는 '공급망 전체 과제'로 확장되고 있다.</div>
+</div>
+</article></div>
+  </section>
+
+  <div class="footer">본 뉴스레터는 구글 검색 기반 자동 수집 시스템을 통해 작성되었습니다. 사진은 출처가 확인된 경우에만 게재합니다.</div>
+</div>
+</body>
+</html>
