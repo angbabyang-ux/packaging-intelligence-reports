@@ -50,7 +50,7 @@ def make(repo, n):
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-bottom:2px solid {INK};padding-bottom:10px;margin-bottom:4px;">
 <tr><td style="padding-bottom:10px;">
 <span style="color:{ACCENT};font-size:16px;">&#9679;</span>
-<span style="font-weight:700;font-size:17px;color:{INK};margin-left:10px;">포장재 인텔리전스 &middot; 뉴스레터</span>
+<span style="font-weight:700;font-size:17px;color:{INK};margin-left:10px;">포장재 뉴스레터</span>
 </td></tr>
 </table>
 <p style="font-size:12.5px;color:{SLATE};margin:8px 0 0;">주간 포장재 산업 신호와 규제 레이더를 사진과 함께 정리합니다.</p>
