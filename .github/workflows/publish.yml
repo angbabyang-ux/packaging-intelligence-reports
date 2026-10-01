@@ -1,0 +1,102 @@
+name: Verify and publish issue
+
+on:
+  push:
+    branches: [main]
+    paths: ["_automation/issues/*.json"]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue number to (re)process"
+        required: true
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Pick issue file
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.issue }}" ]; then
+            f="_automation/issues/issue-${{ github.event.inputs.issue }}.json"
+          else
+            f=$(git diff --name-only HEAD~1 HEAD -- '_automation/issues/*.json' | sort -V | tail -n 1)
+          fi
+          echo "file=$f" >> "$GITHUB_OUTPUT"
+          echo "num=$(basename "$f" .json | sed 's/issue-//')" >> "$GITHUB_OUTPUT"
+
+      - name: Verify sources, fill photos, render fixed template
+        run: python _automation/pipeline.py "${{ steps.pick.outputs.file }}"
+
+      - name: Record crash as a final failure status
+        if: failure()
+        env:
+          N: ${{ steps.pick.outputs.num }}
+        run: |
+          mkdir -p _automation/status
+          python -c "import json,os;json.dump({'number':int(os.environ['N'] or 0),'ok':False,'final':True,'live':False,'problems':['verification pipeline crashed - see GitHub Actions log'],'dropped':[]},open('_automation/status/issue-'+os.environ['N']+'.json','w'),indent=1)"
+          git config user.name "packaging-intelligence-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add _automation/status
+          git commit -m "Issue $N pipeline crashed"
+          git push
+
+      - name: Commit results
+        run: |
+          git config user.name "packaging-intelligence-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish issue ${{ steps.pick.outputs.num }} (verified)" || echo "nothing to commit"
+          git push
+
+      - name: Request Pages build and confirm the page is live
+        env:
+          GH_TOKEN: ${{ github.token }}
+          N: ${{ steps.pick.outputs.num }}
+        run: |
+          status="_automation/status/issue-$N.json"
+          if [ "$(python -c "import json;print(json.load(open('$status'))['ok'])")" != "True" ]; then exit 0; fi
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
+          url="https://angbabyang-ux.github.io/packaging-intelligence-reports/newsletter-$N.html"
+          want=$(python -c "import json;print(json.load(open('$status'))['photos'])")
+          live=false
+          for i in $(seq 1 40); do
+            body=$(curl -s "$url?nocache=$i-$RANDOM" || true)
+            got=$(printf '%s' "$body" | grep -o 'class="item-media"' | wc -l)
+            if printf '%s' "$body" | grep -q "포장재 인텔리전스 $N호" && [ "$got" -ge "$want" ]; then live=true; break; fi
+            sleep 15
+          done
+          python - <<EOF
+          import json
+          p = "$status"
+          s = json.load(open(p, encoding="utf-8"))
+          s["live"] = "$live" == "true"
+          s["final"] = True
+          if not s["live"]:
+              s["ok"] = False
+              s["problems"].append("page did not go live on GitHub Pages within 10 minutes")
+          json.dump(s, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+          EOF
+          git add "$status"
+          git commit -m "Issue $N live check: $live"
+          git pull --rebase
+          git push
