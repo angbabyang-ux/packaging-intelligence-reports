@@ -102,41 +102,41 @@
   },
   {
    "is_reg": false,
-   "flag": "🇺🇸",
-   "region": "미국",
-   "headline": "美 알루미늄협회, 'America Needs Aluminum' 캠페인 시작",
-   "url": "https://www.aluminum.org/news/aluminum-association-launches-america-needs-aluminum-campaign",
-   "date": "2026-10-01",
-   "source": "Aluminum Association",
+   "flag": "🇬🇧",
+   "region": "영국",
+   "headline": "듀오 패키징, 그래핀 강화 필름 '2DPE' 상업 적용 시작",
+   "url": "https://bdaily.co.uk/articles/2026/10/02/duo-develops-never-seen-before-packaging-film",
+   "date": "2026-10-02",
+   "source": "Bdaily",
    "tags": [
-    "미국",
+    "영국",
     "S3상용",
-    "업계공인",
-    "경쟁 추격"
+    "기술혁신",
+    "지속가능"
    ],
-   "body": "미국 알루미늄협회가 10월 1일 자국 알루미늄 생산·재활용·투자 확대를 촉구하는 공공 캠페인 'America Needs Aluminum'을 출범했다. 수입 의존도를 낮추고 캔 등 포장용 알루미늄의 국내 공급을 늘리자는 취지다.",
-   "insight": "그래서— 알루미늄 캔의 '친환경 이미지'만큼 '자국 생산' 서사도 업계의 새로운 마케팅 축이 되고 있다.",
+   "body": "영국 맨체스터의 듀오 패키징이 맨체스터대 그래핀엔지니어링혁신센터(GEIC)와 함께 개발한 그래핀 강화 유연포장 필름 '2DPE'의 상업 적용을 10월 1일 발표했다. 유통업체 QVC와의 실증에서 재생원료 함량을 45%에서 60%로 늘리면서도 필름 두께는 30마이크론에서 28마이크론으로 줄였고, 강도는 최대 35% 높아졌다.",
+   "insight": "그래서— 그래핀이 '재생원료를 늘리면 강도가 떨어진다'는 유연포장의 오랜 트레이드오프를 깨고 있다.",
    "img": "",
-   "source_published": "2026-10-01"
+   "source_published": "2026-10-02"
   },
   {
-   "is_reg": true,
+   "is_reg": false,
    "flag": "🇪🇺",
    "region": "유럽",
-   "headline": "EU 의회 ENVI위, PPWR 소상공인 EPR 대리인 면제 표결",
-   "url": "https://www.packaging-gateway.com/news/european-parliament-ppwr-vote/",
-   "date": "2026-10-01",
-   "source": "Packaging Gateway",
+   "headline": "GEKA·AXILONE, 알루미늄 외피 입힌 뷰티 용기 '시너지(Symbiosis)' 공개",
+   "url": "https://cosmeticsbusiness.com/geka-and-axilone-unveil-symbiosis-at-luxe-pack",
+   "date": "2026-09-30",
+   "source": "Cosmetics Business",
    "tags": [
     "유럽",
-    "S3상용",
-    "업계공인",
-    "경쟁 추격"
+    "S2프로토",
+    "기술혁신",
+    "발상혁신"
    ],
-   "body": "유럽의회 환경위원회(ENVI)가 10월 1일 PPWR상 EU 역내 소상공인(종업원 49인·매출 1,000만 유로 이하)에 한해 EPR 대리인 지정 의무를 면제하는 수정안을 표결에 부쳤다. 이사회는 앞서 제안된 전면 유예안을 철회한 반면, 의회는 소상공인으로 범위를 좁힌 면제를 추진하고 있다.",
-   "insight": "그래서— PPWR의 행정 부담 완화 논의가 '전면 유예'에서 '소상공인만 선별 면제'로 좁혀지고 있다.",
+   "body": "독일 GEKA와 프랑스 AXILONE이 9월 30일 모나코 Luxe Pack에서 저탄소 알루미늄 외피와 투명 내부 병을 결합한 프레스티지 뷰티 용기 '시너지(Symbiosis)'를 공개했다. 투명 창을 통해 내용물의 색과 질감을 그대로 보여주며, 무광·유광·브러시 마감 등 다양한 외장 커스터마이징이 가능하다.",
+   "insight": "그래서— '속은 가볍게, 겉은 고급스럽게'라는 뷰티 패키징의 양립 과제를 알루미늄-플라스틱 이중구조로 풀고 있다.",
    "img": "",
-   "source_published": "2026-10-01"
+   "source_published": "2026-09-30"
   },
   {
    "is_reg": false,
@@ -199,20 +199,20 @@
    "is_reg": false,
    "flag": "🇪🇺",
    "region": "유럽",
-   "headline": "英 스타트업 iBoxit, EPS 대체 식물 기반 완충재로 투자 유치",
-   "url": "https://ukbaa.org.uk/blog/2026/10/01/sustainable-packaging-startup-iboxit-secures-funding-boost/",
-   "date": "2026-10-01",
-   "source": "UKBAA",
+   "headline": "알베아, 모노머티리얼 리필 튜브 'Fill-Up'으로 탄소 9% 감축",
+   "url": "https://www.formesdeluxe.com/article/albea-eurovetrocap-lablabo-ppk-technicaps-sneak-preview-of-the-packaging-innovations-on-show-at-luxe-pack-monaco-2026.65536",
+   "date": "2026-09-30",
+   "source": "Formes de Luxe",
    "tags": [
     "유럽",
-    "S1개념",
-    "발상혁신",
-    "지속가능"
+    "S3상용",
+    "지속가능",
+    "기술혁신"
    ],
-   "body": "영국 스타트업 iBoxit이 10월 1일 브리티시 디자인 펀드 등으로부터 23만 파운드를 포함해 총 40만 파운드 규모의 투자를 유치했다고 밝혔다. 발포폴리스티렌(EPS)을 대체하는 식물 기반 완충재를 개발 중이며, 호주 시장을 시작으로 스웨덴 진출도 준비하고 있다.",
-   "insight": "그래서— 수산물·식품 물류의 'EPS 박스'가 투자자들에게도 다음 교체 대상으로 보이기 시작했다.",
+   "body": "프랑스 알베아가 9월 28~30일 모나코 Luxe Pack에서 흘리지 않고 위쪽을 잘라 채우는 모노머티리얼 프리미엄 리필 튜브 'Fill-Up'을 선보였다. 기존 400마이크론 PBL 튜브와 비교해 무게를 9%, 탄소 배출을 9% 각각 줄였다고 밝혔다.",
+   "insight": "그래서— 리필 포맷의 경쟁력이 '얼마나 깔끔하게 리필하는가'를 넘어 '얼마나 가벼운 소재로 만드는가'로 넘어가고 있다.",
    "img": "",
-   "source_published": "2026-10-01"
+   "source_published": "2026-09-30"
   },
   {
    "is_reg": false,
@@ -275,9 +275,9 @@
  ],
  "regulation_current": [
   {
-   "title": "EU PPWR, 소상공인 EPR 대리인 의무 면제 두고 의회 표결",
-   "url": "https://www.packaging-gateway.com/news/european-parliament-ppwr-vote/",
-   "body": "유럽의회 환경위원회(ENVI)가 10월 1일 PPWR에 따른 EU 역내 EPR 대리인 지정 의무를 소상공인(종업원 49인·매출 1,000만 유로 이하)에 한해 면제하는 수정안을 표결했다. 이사회가 앞서 제안된 2035년까지의 전면 유예를 철회한 가운데, 결론이 날 때까지는 모든 기업에 현행 의무가 그대로 적용된다."
+   "title": "인도네시아 BPOM 식품포장 규정, 12개월 전환기간 진행 중",
+   "url": "https://natlawreview.com/article/indonesias-new-food-packaging-regulation-key-compliance-changes",
+   "body": "인도네시아 식약청(BPOM)이 지난 6월 30일 공표한 식품포장 신규 규정(BPOM 11/2026)에 따라 식품접촉물질 허용 목록 등이 바뀌었으며, 공표일로부터 12개월의 전환기간이 현재 진행 중이다. 전환기간이 끝나는 2027년 6월까지 기업들은 포장 자재를 신규 기준에 맞춰 전환해야 한다."
   },
   {
    "title": "캐나다 앨버타주, 포장재·종이 EPR 전면 시행",
