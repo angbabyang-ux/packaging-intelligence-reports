@@ -6,6 +6,25 @@
  "reg_section_title": "책임이 넘어가는 한 주",
  "newsletter_items": [
   {
+   "is_reg": true,
+   "flag": "🇨🇦",
+   "region": "캐나다",
+   "headline": "캐나다 앨버타주, 포장재·종이류 EPR로 전면 전환",
+   "url": "https://www.recyclingtoday.com/news/alberta-fully-transitions-to-epr-for-packaging-and-paper/",
+   "date": "2026-10-01",
+   "source": "Recycling Today",
+   "tags": [
+    "캐나다",
+    "S3상용",
+    "업계공인",
+    "경쟁 추격"
+   ],
+   "body": "캐나다 앨버타주가 10월 1일부로 1회용 포장재·종이류에 대한 생산자책임재활용제도(EPR)로 완전히 전환했다. 그동안 지방정부가 맡아온 재활용 수거·처리 비용과 운영 책임이 생산자 측으로 넘어가게 됐다.",
+   "insight": "그래서— 북미 재활용 비용 구조가 '지자체 부담'에서 '생산자 부담'으로 빠르게 재편되고 있다.",
+   "img": "https://www.recyclingtoday.com/fileuploads/image/2026/10/02/circular-materials_alberta-epr-web.jpg",
+   "source_published": "2026-10-02"
+  },
+  {
    "is_reg": false,
    "flag": "🇺🇸",
    "region": "미국",
@@ -21,7 +40,7 @@
    ],
    "body": "美 스킨케어 브랜드 KraveBeauty가 9월 30일 미생물 발효 기반 바이오폴리머 Vivomer로 만든 용기·캡을 적용한 '모찌 베리어 모이스처 크림'을 출시했다. 이 용기는 BPA·PFAS·프탈레이트가 없는 석유화학 無소재로, 가정·매립·해양 환경 어디서든 생분해·퇴비화가 가능하다고 밝혔다.",
    "insight": "그래서— 생분해 폴리머가 '연구실 소재'를 넘어 실제 판매되는 스킨케어 용기로 들어오고 있다.",
-   "img": "",
+   "img": "https://www.beautypackaging.com/wp-content/uploads/sites/8/2026/09/KraveBeauty.jpg",
    "source_published": "2026-09-30"
   },
   {
@@ -40,8 +59,8 @@
    ],
    "body": "Silgan Dispensing이 Groupe Pochet가 개발한 몰드 유리 향수병(SNI 13 나사목)에 맞춘 분리형 리필 펌프 '멜로디 피루엣 SNI 13'을 9월 30일 모나코 Luxe Pack에서 공개했다. 이 펌프는 Silgan의 리필 커넥터 시스템과 호환되며, 반복적인 리필 사용에도 견딜 수 있도록 설계됐다.",
    "insight": "그래서— 향수 리필 시스템이 펌프 단위까지 표준화되며 '병은 그대로, 내용물만 교체'하는 모델이 구체화되고 있다.",
-   "img": "",
-   "source_published": "2026-09-30"
+   "img": "https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639262679403530461Melodie_Pirouette_SNI_13_frontal_3_copie_1_.jpg",
+   "source_published": "2026-09-29"
   },
   {
    "is_reg": false,
@@ -59,46 +78,8 @@
    ],
    "body": "영국 포장업체 스펙트라 패키징이 9월 29일 'PCR55' 이니셔티브를 발표하며, 화장품·퍼스널케어 용기의 재생원료(PCR) 함량 기본 기준을 기존 35%에서 55%로 끌어올렸다. 완제품 수준의 재생 플라스틱 함량을 표준화해 브랜드의 스코프3 배출과 원재료 사용량을 줄이는 것이 목표다.",
    "insight": "그래서— '최대한 많이'가 아니라 '기본값 55%'가 화장품 용기 업계의 새로운 출발선이 되고 있다.",
-   "img": "",
+   "img": "https://www.polyestertime.com/wp-content/uploads/2026/09/ERNI-Plastics-PCR-29-09-2026.jpg",
    "source_published": "2026-09-29"
-  },
-  {
-   "is_reg": true,
-   "flag": "🇮🇳",
-   "region": "인도",
-   "headline": "인도 마하라슈트라주, r-PET 병 재활용 제도 'Maha r-PET' 출범",
-   "url": "https://theprint.in/india/maha-r-pet-bottle-stickers-plastic-recycling-initiative-launched-in-maharashtra/3060389",
-   "date": "2026-10-02",
-   "source": "ThePrint",
-   "tags": [
-    "인도",
-    "S3상용",
-    "지속가능",
-    "업계공인"
-   ],
-   "body": "인도 마하라슈트라 주정부가 10월 2일 환경부 장관 판카자 문데 주재로 대규모 플라스틱 재활용을 위한 'Maha r-PET Bottle & Stickers' 제도를 공식 출범시켰다. PET 병에 보증 스티커를 부착해 회수·추적성을 높이는 방식으로 설계됐다.",
-   "insight": "그래서— 인도의 PET 재활용이 민간 자율 수거에서 주정부 주도 추적 시스템으로 단계를 올리고 있다.",
-   "img": "",
-   "source_published": "2026-10-02"
-  },
-  {
-   "is_reg": true,
-   "flag": "🇨🇦",
-   "region": "캐나다",
-   "headline": "캐나다 앨버타주, 포장재·종이류 EPR로 전면 전환",
-   "url": "https://www.recyclingtoday.com/news/alberta-fully-transitions-to-epr-for-packaging-and-paper/",
-   "date": "2026-10-01",
-   "source": "Recycling Today",
-   "tags": [
-    "캐나다",
-    "S3상용",
-    "업계공인",
-    "경쟁 추격"
-   ],
-   "body": "캐나다 앨버타주가 10월 1일부로 1회용 포장재·종이류에 대한 생산자책임재활용제도(EPR)로 완전히 전환했다. 그동안 지방정부가 맡아온 재활용 수거·처리 비용과 운영 책임이 생산자 측으로 넘어가게 됐다.",
-   "insight": "그래서— 북미 재활용 비용 구조가 '지자체 부담'에서 '생산자 부담'으로 빠르게 재편되고 있다.",
-   "img": "",
-   "source_published": "2026-10-01"
   },
   {
    "is_reg": false,
@@ -116,7 +97,7 @@
    ],
    "body": "영국 맨체스터의 듀오 패키징이 맨체스터대 그래핀엔지니어링혁신센터(GEIC)와 함께 개발한 그래핀 강화 유연포장 필름 '2DPE'의 상업 적용을 10월 1일 발표했다. 유통업체 QVC와의 실증에서 재생원료 함량을 45%에서 60%로 늘리면서도 필름 두께는 30마이크론에서 28마이크론으로 줄였고, 강도는 최대 35% 높아졌다.",
    "insight": "그래서— 그래핀이 '재생원료를 늘리면 강도가 떨어진다'는 유연포장의 오랜 트레이드오프를 깨고 있다.",
-   "img": "",
+   "img": "https://bdaily.co.uk/images/uploads/JtAoroCFrwvZMSzaspHOqPgl5f5YKOX1FSjj1ogx.png?w=1200&h=630&fm=jpg&fit=crop-50-50&s=cf2b5eea30f500ff127b1f9353849a6e",
    "source_published": "2026-10-02"
   },
   {
@@ -135,8 +116,8 @@
    ],
    "body": "독일 GEKA와 프랑스 AXILONE이 9월 30일 모나코 Luxe Pack에서 저탄소 알루미늄 외피와 투명 내부 병을 결합한 프레스티지 뷰티 용기 '시너지(Symbiosis)'를 공개했다. 투명 창을 통해 내용물의 색과 질감을 그대로 보여주며, 무광·유광·브러시 마감 등 다양한 외장 커스터마이징이 가능하다.",
    "insight": "그래서— '속은 가볍게, 겉은 고급스럽게'라는 뷰티 패키징의 양립 과제를 알루미늄-플라스틱 이중구조로 풀고 있다.",
-   "img": "",
-   "source_published": "2026-09-30"
+   "img": "https://cosmeticsbusiness.com/article-image-alias/geka-and-axilone-unveil-symbiosis-at.jpg",
+   "source_published": null
   },
   {
    "is_reg": false,
@@ -154,7 +135,7 @@
    ],
    "body": "영국 환경정의재단(EJF)이 9월 말 발표한 '포이즌 플라스틱' 보고서에 따르면, 식품 포장에 쓰이는 플라스틱 화학물질 중 약 92%가 암·유전자 변형·장기 독성 등 인체 고위험군으로 분류됐다. 조사 대상 화학물질 3,552종 가운데 약 80%는 위해성을 제대로 평가할 데이터 자체가 부족한 것으로 나타났다.",
    "insight": "그래서— '재활용 가능한가'를 넘어 '애초에 안전한 소재인가'가 다음 포장 규제의 쟁점으로 떠오르고 있다.",
-   "img": "",
+   "img": "https://i0.wp.com/bioplasticsnews.com/wp-content/uploads/2020/09/toxicity.jpg?fit=1200%2C671",
    "source_published": "2026-09-30"
   },
   {
@@ -173,7 +154,7 @@
    ],
    "body": "일본 오지홀딩스가 9월 30일~10월 2일 도쿄에서 열린 'Highly-Functional Material Week'에서 플라스틱 완충재를 대체할 에어레이드 부직포 'Kinarito'와 생분해 소재 'HyBioth'를 선보였다. HyBioth는 전자제품 보호용 완충재로, Kinarito는 신선식품용 종이 용기로 각각 제안됐다.",
    "insight": "그래서— 플라스틱 완충재 '탈출'이 식품 포장을 넘어 전자제품 포장까지 번지고 있다.",
-   "img": "",
+   "img": "https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639264424512702305Image.jpg",
    "source_published": "2026-10-01"
   },
   {
@@ -192,26 +173,7 @@
    ],
    "body": "카길 바이오인더스트리얼이 같은 도쿄 머티리얼위크에서 식품접촉용 필름에 쓰이는 86% 바이오 기반 폴리머 가공첨가제 'Incroflo P50'을 공개했다. 미국 FDA 승인을 받은 이 첨가제는 기존 불소중합체 가공제를 대체해 압출 생산성을 높이는 용도로 제안됐다.",
    "insight": "그래서— 필름 자체보다 '필름을 만드는 보조제'까지 바이오 기반으로 바뀌는 2차 전환이 시작됐다.",
-   "img": "",
-   "source_published": "2026-10-01"
-  },
-  {
-   "is_reg": false,
-   "flag": "🇪🇺",
-   "region": "유럽",
-   "headline": "알베아, 모노머티리얼 리필 튜브 'Fill-Up'으로 탄소 9% 감축",
-   "url": "https://www.formesdeluxe.com/article/albea-eurovetrocap-lablabo-ppk-technicaps-sneak-preview-of-the-packaging-innovations-on-show-at-luxe-pack-monaco-2026.65536",
-   "date": "2026-09-30",
-   "source": "Formes de Luxe",
-   "tags": [
-    "유럽",
-    "S3상용",
-    "지속가능",
-    "기술혁신"
-   ],
-   "body": "프랑스 알베아가 9월 28~30일 모나코 Luxe Pack에서 흘리지 않고 위쪽을 잘라 채우는 모노머티리얼 프리미엄 리필 튜브 'Fill-Up'을 선보였다. 기존 400마이크론 PBL 튜브와 비교해 무게를 9%, 탄소 배출을 9% 각각 줄였다고 밝혔다.",
-   "insight": "그래서— 리필 포맷의 경쟁력이 '얼마나 깔끔하게 리필하는가'를 넘어 '얼마나 가벼운 소재로 만드는가'로 넘어가고 있다.",
-   "img": "",
+   "img": "https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639263587226446480Cargill_Tokyo_1.jpg",
    "source_published": "2026-09-30"
   },
   {
@@ -230,7 +192,7 @@
    ],
    "body": "이탈리아 포장기업 룸슨이 미국과 아시아의 화장품 1차 포장 전문기업 롬바르디 디자인앤매뉴팩처링 지분 100%를 인수했다고 10월 2일 업계 M&A 소식으로 전해졌다. 룸슨은 이번 인수로 유럽·북미·아시아 3개 대륙에 직접 생산거점을 갖추게 됐으며, 롬바르디 경영진과 브랜드는 그대로 유지된다.",
    "insight": "그래서— 화장품 용기 공급망의 '지역 밀착 생산'이 글로벌 M&A를 통해 완성되고 있다.",
-   "img": "",
+   "img": "https://imgproxy.divecdn.com/Llloqj11M960IY9tp4PifDuc3KX3xhJTFPTHGwwTRks/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjUxOTE0MTQ0LmpwZw==.webp",
    "source_published": "2026-10-02"
   },
   {
@@ -249,9 +211,9 @@
    ],
    "body": "인도 뭄바이 BEC에서 9월 29일부터 10월 1일까지 열린 'PackEx India 2026'에 포장 기계·소재·자동화 분야 최신 기술이 모였다. 전시는 인도 포장산업의 자동화·AI 도입 확대 흐름과 맞물려 진행됐다.",
    "insight": "그래서— 인도 포장시장이 '저가 생산기지'에서 '자동화 투자 대상지'로 빠르게 옮겨가고 있다.",
-   "img": "",
+   "img": "http://visitexpo.in/wp-content/uploads/2026/08/PackEx-India-2026.jpg",
    "event_date": "2026-10-01",
-   "source_published": "2026-10-01"
+   "source_published": "2026-08-15"
   },
   {
    "is_reg": false,
@@ -269,7 +231,7 @@
    ],
    "body": "미국 지관포장협의회(PPC)가 10월 1일 제83회 연례 종이포장 경진대회 수상작을 발표했다. TPC패키징의 브라이덜 향수 패키지 'Dressed In White'가 올해의 포장으로, 탐팩스 리저너블 캐리어가 지속가능성 부문을 수상했다.",
    "insight": "그래서— 향수·위생용품처럼 '감성'이 중요한 카테고리에서 종이 구조 설계가 핵심 차별화 요소로 떠오르고 있다.",
-   "img": "",
+   "img": "https://www.packagingstrategies.com/ext/resources/2026/10/01/Dressed-In-White.png?height=635&t=1790882371&width=1200",
    "source_published": "2026-10-01"
   }
  ],

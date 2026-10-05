@@ -1,26 +1,31 @@
 {
  "number": 5,
- "ok": false,
- "final": true,
+ "ok": true,
+ "final": false,
  "live": null,
- "problems": [
-  "only 11 newsletter items survived verification (minimum 12)"
- ],
+ "problems": [],
  "dropped": [
   {
-   "headline": "美 알루미늄협회, 'America Needs Aluminum' 캠페인 시작",
+   "headline": "인도 마하라슈트라주, r-PET 병 재활용 제도 'Maha r-PET' 출범",
    "reason": "no verifiable photo"
   },
   {
-   "headline": "EU 의회 ENVI위, PPWR 소상공인 EPR 대리인 면제 표결",
-   "reason": "stale: source published 2023-10-25"
-  },
-  {
-   "headline": "英 스타트업 iBoxit, EPS 대체 식물 기반 완충재로 투자 유치",
+   "headline": "알베아, 모노머티리얼 리필 튜브 'Fill-Up'으로 탄소 9% 감축",
    "reason": "no verifiable photo"
   }
  ],
- "items": 11,
- "photos": 11,
- "checked_at": "2026-10-05T04:20:59.260792+00:00"
+ "items": 12,
+ "photos": 12,
+ "checked_at": "2026-10-05T04:24:38.317747+00:00",
+ "entry": {
+  "number": 5,
+  "date_range": "2026.09.29~10.05",
+  "newsletter_path": "newsletter-5.html",
+  "regulation_path": "regulation-5.html",
+  "newsletter_items": 12,
+  "photo_count": 12,
+  "regulation_current": 5,
+  "regulation_future": 5,
+  "masthead_title": "면제는 좁아지고, 소재는 넓어진다"
+ }
 }

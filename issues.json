@@ -31,5 +31,16 @@
     "regulation_current": 5,
     "regulation_future": 5,
     "masthead_title": "국경 넘는 규제, 군더더기 벗는 포장"
+  },
+  {
+    "number": 5,
+    "date_range": "2026.09.29~10.05",
+    "newsletter_path": "newsletter-5.html",
+    "regulation_path": "regulation-5.html",
+    "newsletter_items": 12,
+    "photo_count": 12,
+    "regulation_current": 5,
+    "regulation_future": 5,
+    "masthead_title": "면제는 좁아지고, 소재는 넓어진다"
   }
 ]
