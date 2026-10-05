@@ -1,0 +1,26 @@
+{
+ "number": 5,
+ "ok": false,
+ "final": true,
+ "live": null,
+ "problems": [
+  "only 11 newsletter items survived verification (minimum 12)"
+ ],
+ "dropped": [
+  {
+   "headline": "美 알루미늄협회, 'America Needs Aluminum' 캠페인 시작",
+   "reason": "no verifiable photo"
+  },
+  {
+   "headline": "EU 의회 ENVI위, PPWR 소상공인 EPR 대리인 면제 표결",
+   "reason": "stale: source published 2023-10-25"
+  },
+  {
+   "headline": "英 스타트업 iBoxit, EPS 대체 식물 기반 완충재로 투자 유치",
+   "reason": "no verifiable photo"
+  }
+ ],
+ "items": 11,
+ "photos": 11,
+ "checked_at": "2026-10-05T04:20:59.260792+00:00"
+}
